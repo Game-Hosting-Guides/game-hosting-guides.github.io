@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Best Minecraft Hosting</a>
+        <a href="{{ '/reviews/' | relative_url }}">All Reviews</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. Independent reviews. Some links may be affiliate links — this never affects scoring.</p>
+    </div>
+  </footer>
+</body>
+</html>

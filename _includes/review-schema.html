@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "{{ page.provider_name | escape }}",
+    "url": "{{ page.provider_url | escape }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "{{ page.provider_name | escape }}",
+      "url": "{{ page.provider_url | escape }}"
+    },
+    "serviceType": "Minecraft server hosting"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "url": "{{ site.url }}"
+  },
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "10",
+    "worstRating": "1"
+  },
+  "name": "{{ page.title | escape }}",
+  "reviewBody": "{{ page.description | escape }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "url": "{{ site.url }}"
+  }
+}
+</script>

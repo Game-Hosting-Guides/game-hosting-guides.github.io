@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<article class="review" itemscope itemtype="https://schema.org/Review">
+  <header class="review-header">
+    <h1 itemprop="name">{{ page.title }}</h1>
+    {% if page.rating %}
+    <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+      <meta itemprop="ratingValue" content="{{ page.rating }}">
+      <meta itemprop="bestRating" content="10">
+      <meta itemprop="worstRating" content="1">
+      <strong>{{ page.rating }} / 10</strong>
+    </div>
+    {% endif %}
+    {% if page.last_updated %}<p class="meta">Last updated: <time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time></p>{% endif %}
+  </header>
+
+  <div itemprop="reviewBody">
+    {{ content }}
+  </div>
+
+  {% if page.provider_name %}
+  <meta itemprop="itemReviewed" content="{{ page.provider_name }}">
+  {% endif %}
+  <meta itemprop="author" content="{{ site.author }}">
+
+  {% include review-schema.html %}
+</article>
+
+<aside class="related-reviews">
+  <h2>Compare with other Minecraft hosts</h2>
+  <ul>
+    {% for review in site.reviews %}
+      {% if review.url != page.url %}
+      <li><a href="{{ review.url | relative_url }}">{{ review.provider_name }} review</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/' | relative_url }}">&larr; Back to comparison table</a></p>
+</aside>

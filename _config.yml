@@ -1,0 +1,54 @@
+title: "Game Hosting Guides"
+description: "Independent, in-depth reviews and comparisons of Minecraft and game server hosting providers. Real-world benchmarks, pricing breakdowns, and feature analysis to help you pick the right host."
+url: "https://game-hosting-guides.github.io"
+baseurl: ""
+author: "Game Hosting Guides"
+lang: en_US
+timezone: UTC
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /reviews/:slug/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# SEO defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: "reviews"
+    values:
+      layout: review
+
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:name/
+
+# Social / SEO tag plugin
+twitter:
+  username: gamehostguides
+  card: summary_large_image
+
+social:
+  name: Game Hosting Guides
+  links:
+    - https://github.com/Game-Hosting-Guides
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - node_modules
