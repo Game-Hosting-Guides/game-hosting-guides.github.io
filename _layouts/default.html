@@ -47,9 +47,12 @@
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="site-title" href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="" class="site-logo" width="36" height="36" loading="eager">
-        <span>{{ site.title }}</span>
+      <a class="site-title" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+        <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="" class="site-logo" width="40" height="40" loading="eager">
+        <span class="wordmark">
+          <span class="wordmark-primary">Game Hosting</span>
+          <span class="wordmark-secondary">Guides &middot; Est. 2026</span>
+        </span>
       </a>
       <nav>
         <a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">Best Hosting</a>

@@ -107,16 +107,9 @@ But for a guide ranked on disclosure, Apex falls to #5. Paying $4.49 for undiscl
 
 To their credit, **they're upfront about the tradeoffs**. The free tier has an hourly renewal queue (your server sleeps), no custom JARs, and is ad-supported. The EPYC 7351P is older silicon. Performance is fine for 2–3 friends and unusable for anything serious. That honesty is why they're on the list — they're not pretending the free tier is something it isn't.
 
-Specs worth knowing:
+**Best for:** trying out hosting before paying anything, or a casual server for 2–3 friends who don't mind sleep-on-idle.
 
-- **$0/mo free tier** with 1 GB RAM on disclosed EPYC 7351P (older but published)
-- **Hourly renewal queue, no custom JARs, ad-supported** on the free tier
-- **Paid tiers start at $15/mo** — outside this guide's cap
-- 9 global datacenter locations
-
-**Best for:** trying out hosting before paying anything, or hosting a casual server for 2–3 friends who don't mind the sleep-on-idle behaviour.
-
-**Watch out for:** the hourly renewal queue means your server is *not* always-on. Don't run a community server on the free tier. If you need always-on, jump straight to one of the paid options above.
+**Watch out for:** the hourly renewal queue means your server is *not* always-on. Don't run a community server on the free tier. If you need always-on, pick one of the paid options above.
 
 [Read the full Server.pro review →](/reviews/server-pro/)
 

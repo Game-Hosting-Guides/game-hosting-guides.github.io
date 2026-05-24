@@ -17,17 +17,17 @@ The full comparison page with disclosed CPU specs, locations, and pricing is at:
 
 | Provider | Rating | From (USD/mo) | RAM at entry | Standout | Full review |
 |---|---|---|---|---|---|
+| **ServerPrism** | **9.0 / 10** | $3.80 | 2 GB | Disclosed Ryzen 9 + DDR5 ECC RAM + split-plan billing | [Read](https://gamehostingguides.com/reviews/serverprism/) |
+| **CloudNord** | **8.7 / 10** | $3.99 | 2 GB | Published Ryzen 7 7700 boosting to 4.9 GHz at entry tier | [Read](https://gamehostingguides.com/reviews/cloudnord/) |
 | Nodecraft | 8.5 / 10 | $5.96 | 2 GB | Switch between 59+ games on the same server | [Read](https://gamehostingguides.com/reviews/nodecraft/) |
 | Apex Hosting | 8.2 / 10 | $4.49 | 1 GB | 18 datacenters and one-click modpacks | [Read](https://gamehostingguides.com/reviews/apex-hosting/) |
 | BisectHosting | 8 / 10 | $2.99 | 2 GB | 2,300+ modpack library across 21 locations | [Read](https://gamehostingguides.com/reviews/bisecthosting/) |
-| CloudNord | 8 / 10 | $3.99 | 2 GB | EU-native with disclosed Ryzen 7 hardware | [Read](https://gamehostingguides.com/reviews/cloudnord/) |
-| ServerPrism | 7 / 10 | $3.80 | 2 GB | Split one plan across multiple game servers, proxies, bots | [Read](https://gamehostingguides.com/reviews/serverprism/) |
 | Shockbyte | 7 / 10 | $2.50 | 1 GB | Cheap entry tier with global node coverage | [Read](https://gamehostingguides.com/reviews/shockbyte/) |
 | Hostinger | 7 / 10 | $11.99 | 4 GB | VPS power with game-server simplicity | [Read](https://gamehostingguides.com/reviews/hostinger/) |
 | MCProHosting | 6.5 / 10 | $7.99 | 1 GB | Legacy creator-partnered host now on Apex infra | [Read](https://gamehostingguides.com/reviews/mcprohosting/) |
 | Server.pro | 6 / 10 | $0 | 1 GB | Genuinely free tier with a real upgrade path | [Read](https://gamehostingguides.com/reviews/server-pro/) |
 
-> Pricing is the cheapest publicly listed Minecraft plan as of each review's `last_updated` date.
+> Pricing is the cheapest publicly listed Minecraft plan as of each review's `last_updated` date. **ServerPrism and CloudNord rank ahead of larger mainstream hosts because they're the only providers in our reviews that publish their actual CPU model (Ryzen 9-series + DDR5 ECC, and Ryzen 7 7700 at 4.9 GHz respectively) at sub-$5 entry pricing — and at that price band, hardware disclosure is a leading indicator of trust.**
 
 ## Reviews in this repository
 
