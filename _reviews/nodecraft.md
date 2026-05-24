@@ -16,6 +16,21 @@ ddos_protection: true
 modpack_support: true
 control_panel: "NodePanel"
 standout: "Switch between 59+ games on the same server without losing your configs"
+faq:
+  - question: "Does Nodecraft really let you switch games on the same server?"
+    answer: "Yes. The game-swap feature is a dropdown inside NodePanel that backs up your current game's world and config bundle, replaces the server files with the new game, and restores your old setup if you swap back. It works across 59+ supported games and is included at no extra cost on any plan."
+  - question: "Is Nodecraft cheaper than Apex Hosting or Shockbyte?"
+    answer: "Mixed. Nodecraft Lite at $5.96 for 2 GB is cheaper than Apex Hosting's entry tier, but Shockbyte starts even lower (around $2.50 for 1 GB) and stays cheaper per GB across most tiers. Nodecraft Pro is priced as a premium product — you are paying for NodePanel, datacenter footprint, off-site backups, and game-swap."
+  - question: "Is support 24/7?"
+    answer: "No. Nodecraft support operates in business-hours windows (generally weekday daytime US Central). Response quality is excellent inside that window, and the in-panel knowledgebase is comprehensive enough to self-serve most issues. If you need true 24/7 live support, look at MCProHosting or Apex Hosting."
+  - question: "Does Nodecraft support modpacks?"
+    answer: "Yes. NodePanel ships with a one-click modpack installer covering hundreds of CurseForge, FTB, ATLauncher and Technic packs. Java version selection is automatic. You can also upload custom modpacks via SFTP or the in-browser file manager."
+  - question: "Is DDoS protection included?"
+    answer: "Yes, on all plans at no extra cost, with 99.9% uptime advertised."
+  - question: "Can I cancel anytime?"
+    answer: "Yes. Nodecraft bills month-to-month with no required annual commitment, and runs a 7-day refund window per the terms of service."
+  - question: "Where can I run my server?"
+    answer: "28+ regions across North America, South America, Europe, the Middle East and Asia-Pacific — including Auckland, Tel Aviv and São Paulo, which most competitors do not offer. You pick the region at checkout and can request a free relocation later via ticket."
 ---
 
 Nodecraft has been around since 2013 and, unlike most of the Minecraft-first competition, has spent the better part of a decade positioning itself as a polished multi-game host. The product centerpiece is NodePanel, an in-house control panel that feels more like a modern SaaS dashboard than the warmed-over Multicraft skins you see elsewhere. The other big differentiator is one-click game swapping: a single server slot you can flip between Minecraft, ARK, Rust, Valheim, Terraria and dozens more without losing your worlds or configs.

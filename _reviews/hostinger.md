@@ -16,6 +16,21 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Hostinger Game Panel"
 standout: "VPS power with game-server simplicity"
+faq:
+  - question: "Is Hostinger's Minecraft hosting actually a VPS?"
+    answer: "Yes. The Game Panel plans are KVM VPS instances with a custom game-server management panel layered on top. You get root access, a real Linux kernel, and the ability to install anything you want — but you are also responsible for managing the underlying system."
+  - question: "Why is the headline price so low?"
+    answer: "The advertised promotional rate (e.g. $6.99/mo for Game Panel 1) is conditional on a 24-month upfront payment and is only available for your first term. After the promo period ends, plans renew at $11.99/mo to $49.99/mo depending on tier."
+  - question: "What CPU does Hostinger use for Minecraft hosting?"
+    answer: "Hostinger publicly states that Game Panel plans run on AMD EPYC processors with NVMe SSD storage. Customer reports have identified the EPYC 7543P (Milan generation, 32 cores / 64 threads) as one of the chips in use, but Hostinger does not contractually guarantee a specific model."
+  - question: "Does Hostinger support modpacks and plugins?"
+    answer: "Yes. The one-click installer covers 2,000+ modpacks and all major server distributions (Paper, Spigot, Purpur, Forge, Fabric variants). Because you have root access, you can also install anything manually that the panel does not cover."
+  - question: "Where are Hostinger's Minecraft servers located?"
+    answer: "For VPS plans, datacenters are in Phoenix and Boston (USA); United Kingdom, France, Germany, and Lithuania (Europe); and India, Indonesia, and Malaysia (Asia). There is no VPS presence in Dallas, Singapore, the Netherlands, Brazil, or Oceania."
+  - question: "Does Hostinger include DDoS protection and backups?"
+    answer: "Yes. All Game Panel plans include DDoS protection and free automatic weekly backups stored off-server. Daily backups are available as a paid upgrade. Hostinger does not publish DDoS absorption capacity, so it is best treated as standard upstream filtering."
+  - question: "Will Hostinger support help me fix my Minecraft server?"
+    answer: "Hostinger's support is excellent for hosting infrastructure questions — uptime, network, panel issues, billing — and is available 24/7 via live chat. However, support scope ends at the VPS. They will not log into your server to fix a broken plugin, debug a crashing modpack, or tune JVM flags."
 ---
 
 Hostinger is one of the most visible names in budget hosting, and over the past two years it has pushed hard into the Minecraft space. What gets lost in the marketing is what you are actually buying: Hostinger's "Minecraft hosting" is not a traditional managed game host like [Apex Hosting](/reviews/apex-hosting/) or [BisectHosting](/reviews/bisecthosting/). It is a KVM VPS with a custom Game Panel layered on top, sold under a Minecraft-friendly wrapper.

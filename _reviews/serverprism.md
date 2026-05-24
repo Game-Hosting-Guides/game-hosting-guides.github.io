@@ -16,6 +16,19 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Custom ServerPrism dashboard (Pterodactyl-style, but not officially confirmed as vanilla Pterodactyl)"
 standout: "Single plan you can split across multiple game servers, proxies, databases, and bots"
+faq:
+  - question: "Does ServerPrism use Pterodactyl?"
+    answer: "Probably, based on the dashboard's feature set and behaviour, but ServerPrism does not officially confirm this in its public marketing material. The panel is described generically as your dashboard. If exact panel compatibility matters for your workflow, ask support before purchasing."
+  - question: "Where are ServerPrism's datacenters?"
+    answer: "ServerPrism lists four regions: Europe, North America, Asia (a Southeast Asian hub), and Australia. Specific cities are not published. All locations include DDoS protection by default."
+  - question: "What CPU does ServerPrism use?"
+    answer: "ServerPrism states it uses AMD Ryzen 9-series CPUs paired with DDR5 ECC RAM at 5600 MHz and PCIe Gen4 NVMe SSDs. The exact processor model within the Ryzen 9 family is not publicly disclosed, which is the main reason this review scores 9.0 rather than 9.5."
+  - question: "Can I run a Minecraft network on a single plan?"
+    answer: "Yes. ServerPrism's defining feature is the ability to split one resource pool across multiple independent servers, proxies (Velocity, BungeeCord, Waterfall), databases, and Discord bots, all managed from one panel. This billing model is unique among the hosts in our review set."
+  - question: "What is ServerPrism's refund policy?"
+    answer: "A full refund is available within 72 hours of the initial purchase. Renewals and upgrades are excluded. There are no contracts, and accounts can be cancelled at any time."
+  - question: "Is ServerPrism good for modpacks?"
+    answer: "Yes — it is our top-ranked modpack host. The provider supports 27 modloaders including Forge, NeoForge, Fabric, and Quilt, with one-click installation across CurseForge, Modrinth, FTB, Technic, ATLauncher, and VoidsWrath. The 1:2 CPU-to-RAM ratio gives modpack servers CPU headroom, and the DDR5 ECC RAM helps with memory pressure."
 ---
 
 ServerPrism is our **highest-rated Minecraft host in 2026** because it is the only provider in our reviewed set that publishes its budget-tier silicon — and that silicon is genuinely good. The 2 GB entry plan, at roughly **$3.80/mo**, ships on **AMD Ryzen 9-series** CPUs with **DDR5 ECC RAM at 5600 MHz** and **PCIe Gen4 NVMe** storage. ECC memory at this price point is unusual; most budget hosts ship non-ECC consumer-grade DDR4. Operated by ServerPrism AB out of Sweden, the company sells a single pool of resources that the customer can carve up across as many independent servers, proxies, databases, or Discord bots as they want, all from one panel. That billing model, combined with the disclosed hardware, is what earns the rating.

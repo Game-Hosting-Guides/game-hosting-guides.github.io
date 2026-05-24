@@ -8,6 +8,13 @@ date: 2026-05-24
 last_updated: 2026-05-24
 reading_time: 10
 related_reviews: [apex-hosting, shockbyte, bisecthosting]
+faq:
+  - question: "Is Apex worth the extra cost?"
+    answer: "Only if you need a location Shockbyte doesn't offer (São Paulo, Warsaw, Istanbul, Tel Aviv, Moscow, Hong Kong, or Montreal), or if you specifically value polished onboarding and a curated modpack library. For the typical US, UK, or Amsterdam-region Minecraft server, the ~80% premium isn't earning its keep on raw specs — Apex doesn't even disclose its standard-tier CPU, while Shockbyte does."
+  - question: "Can I switch from Shockbyte to Apex (or vice versa)?"
+    answer: "Yes, and it's easier than most buyers expect. Both hosts run Multicraft, so the panel experience is similar. A world backup downloaded from one host's panel can be uploaded into the other. The main friction is your players' saved IPs — you'll need to give everyone the new server address."
+  - question: "Which is better for modded?"
+    answer: "Both have one-click modpack installers and both can host the major packs. Apex puts more marketing weight behind its curated library, which can matter if you're new to modded. For experienced admins, the curation matters less and Shockbyte's lower pricing means you can afford more RAM, which is the actual bottleneck for modded servers."
 ---
 
 Short version: pick **Shockbyte** if you want the cheapest credible entry tier and you'd like to actually know what CPU your server is running on. Pick **Apex Hosting** if your players live outside the usual US/EU/AU corridor and you want a polished, well-supported experience badly enough to pay roughly 80% more per gigabyte of RAM. Those are two genuinely different products, and the rest of this guide explains why we won't pretend otherwise.

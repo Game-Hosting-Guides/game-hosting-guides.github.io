@@ -16,6 +16,19 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Multicraft"
 standout: "Cheap entry tier with global node coverage"
+faq:
+  - question: "How much does Shockbyte cost for a Minecraft server?"
+    answer: "Plans start at $2.50/month for the Dirt tier (1 GB RAM) and scale up linearly to $40/month for the Titan tier (16 GB RAM). All prices are USD, and discounts of 15-25% are common at signup."
+  - question: "Does Shockbyte support modpacks like All the Mods or RLCraft?"
+    answer: "Yes. The Multicraft panel includes one-click installers for CurseForge, Feed-The-Beast, Technic, and ATLauncher modpacks, plus support for any custom modpack uploaded via FTP or the file manager. Forge and Fabric servers are first-class options."
+  - question: "What is Shockbyte's refund policy?"
+    answer: "A 72-hour self-serve money-back guarantee applies to new services, one per customer. Several conditions void it, including any payment dispute and any fulfilled server-management request. Refunds can take up to 10 business days to process."
+  - question: "Where are Shockbyte's servers located?"
+    answer: "Eight datacenters: New Jersey, West Chicago, Dallas, and Los Angeles in the United States; Amsterdam and Maidenhead in Europe; Singapore; and Sydney, Australia. You can change location after signup via a documented support process."
+  - question: "Does Shockbyte include DDoS protection?"
+    answer: "Yes, DDoS protection is included on every plan at no additional cost. The protection sits at the upstream network layer and covers the L3/L4 attack types typically aimed at Minecraft servers."
+  - question: "Is Shockbyte good for beginners?"
+    answer: "For setup, yes — the Multicraft panel and one-click installers are beginner-friendly, and the knowledgebase is thorough. For support, it depends on luck; if you want guaranteed responsive help over self-service, a more managed host like Apex Hosting is a safer choice for true beginners."
 ---
 
 Shockbyte has been one of the most-recommended budget Minecraft hosts on Reddit and YouTube for the better part of a decade. The pitch is straightforward: very low entry pricing ($2.50/month for the smallest plan), the familiar Multicraft control panel, one-click modpack installation, and datacenters spread across North America, Europe, and Asia-Pacific. That combination has earned it a 10,000+ review footprint on Trustpilot and a permanent slot in "best Minecraft host" listicles.

@@ -8,6 +8,15 @@ date: 2026-05-24
 last_updated: 2026-05-24
 reading_time: 9
 related_reviews: [serverprism, cloudnord, bisecthosting, apex-hosting]
+faq:
+  - question: "What RAM does a modpack server need?"
+    answer: "For most popular packs (ATM9, Create, RLCraft, FTB) with 4-8 players, 6-8GB is realistic on a high-clock disclosed CPU. Larger packs or 15+ players push to 10-12GB. Skyblocks survive on 4-6GB."
+  - question: "Do I need a disclosed CPU for modded?"
+    answer: "Yes, in practice. Minecraft's main tick thread is single-threaded, so a high-clock core determines whether your modpack ticks at 20 TPS or stutters at 12. ServerPrism (Ryzen 9-series, ECC) and CloudNord (Ryzen 7 7700 at 4.9 GHz) disclose. Apex discloses on EX (Ryzen 9 7950X). BisectHosting doesn't disclose on either tier."
+  - question: "Will any of these hosts install my custom modpack?"
+    answer: "Yes — all four use a real file manager (Pterodactyl-class or Multicraft) and let you upload a custom server pack via SFTP. The one-click library is a convenience, not the only path."
+  - question: "What about Nodecraft and Shockbyte — why aren't they ranked here?"
+    answer: "Nodecraft is genuinely good but doesn't fully disclose CPU SKUs, making it a UX-first pick rather than hardware-first. Shockbyte is cheapest with some disclosed CPU options (Ryzen 9 7950X, EPYC 4465P, EPYC 4244P, Xeon E-2276G), but you don't get to pick the node — for modded that variability is a real downside."
 ---
 
 For modded Minecraft, single-thread CPU clock matters more than RAM headroom or library size. A 4.9 GHz disclosed Ryzen 7 beats an undisclosed "high-clock" marketing claim every time. Modpacks are not vanilla with extra textures — a 250-mod pack like All The Mods 9 does things to a server JVM that a "$3 for 4GB" shared-tenant plan was never designed to survive: long GC pauses, chunk-generation bursts that pin a single thread at 100%, save files that balloon past 10GB. The honest way to pick a modpack host in 2026 is to look first at whether the host tells you what CPU you're renting, then at whether that CPU is a high-clock part, and only then at library size and polish. Below are the four hosts from our review pool we'd trust with a modded server.

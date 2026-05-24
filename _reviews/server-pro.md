@@ -16,6 +16,23 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Custom Server.pro web panel"
 standout: "Genuinely free tier with a real upgrade path to paid plans"
+faq:
+  - question: "Is Server.pro really free?"
+    answer: "Yes, the free tier exists and doesn't require a credit card. But it comes with real limits: you must click a renewal button every hour or your server shuts down, you can't upload custom JARs or arbitrary plugins, there are no automatic backups, and you may queue at peak times. It's a usable trial, not a true free-forever host."
+  - question: "What are the free tier limits?"
+    answer: "Approximately 1 GB of RAM on shared CPU, 8 GB of disk, hourly renewal required, restricted plugin selection (no custom JAR uploads), no automatic backups, occasional startup queue at peak hours, and ad-supported platform. DDoS protection is included."
+  - question: "Does Server.pro support modpacks?"
+    answer: "Yes. The automatic modpack installer supports CurseForge, Modrinth, and Feed The Beast packs. On paid tiers you can also upload custom packs and individual JARs manually. The free tier is limited to the curated install options."
+  - question: "What CPU does Server.pro use?"
+    answer: "Three tiers: AMD EPYC 7351P (2.4/2.9 GHz) on free and entry-level Hosting plans, AMD Ryzen 7 5800X (3.8/4.7 GHz) on Gaming plans, and AMD Ryzen 9 9950X3D (4.3/5.7 GHz) on Performance plans. For modded Minecraft, the Performance tier is the one worth paying up for."
+  - question: "How many datacenters does Server.pro have?"
+    answer: "Nine, spread across North America, Europe, Asia-Pacific, South America, and Oceania. You can transfer your server between datacenters from the panel at any time."
+  - question: "Is Server.pro better than Aternos?"
+    answer: "Different products. Aternos is genuinely free-forever with auto-sleep when no players are online; Server.pro's free tier requires hourly manual renewal but gives you a real paid upgrade path on the same panel. If you want a free server you'll never pay for, Aternos. If you might eventually upgrade, Server.pro."
+  - question: "Does Server.pro have DDoS protection?"
+    answer: "Yes, on every tier including free. Standard L3/L4 protection on free and Hosting plans, Advanced L3/L4/L7 on Gaming, and Next-Gen L3/L4/L7 on Performance plans."
+  - question: "Are there backups on the free tier?"
+    answer: "No. Automatic backups are paid-only. If you care about your world, either upgrade or manually download the world files via the panel regularly."
 ---
 
 Server.pro sits in an awkward and interesting spot in the Minecraft hosting market. It isn't quite a free host like Aternos, and it isn't quite a premium paid host like Shockbyte or Apex. Instead, it offers a free tier with strict limits that's clearly designed as a doorway into its paid plans — a freemium model that's relatively rare in this space. Founded in Sweden in 2013, the company has been operating long enough that you can judge it on track record rather than promises.

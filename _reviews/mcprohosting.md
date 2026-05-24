@@ -16,6 +16,19 @@ ddos_protection: true
 modpack_support: true
 control_panel: "OneControlCenter (legacy) — new orders use the Apex Multicraft panel"
 standout: "Historical creator and esports partnerships, now operating under Apex Hosting"
+faq:
+  - question: "Is MCProHosting worth the higher price in 2026?"
+    answer: "Generally, no — not at the legacy MCProHosting brand prices. Because new MCProHosting orders are provisioned on Apex Hosting infrastructure with the Apex panel and the Apex support team, you can buy the exact same underlying service from the Apex Hosting storefront for less money."
+  - question: "Is MCProHosting going out of business?"
+    answer: "Not exactly. MCProHosting was acquired by Nitrado in January 2022 and then operationally folded into Apex Hosting in late 2024. The brand still exists, the storefront still takes orders, and existing customers are not being kicked off — but the company is no longer operated as an independent business."
+  - question: "Does MCProHosting support BungeeCord and Velocity networks?"
+    answer: "Yes. BungeeCord and Velocity are both supported and have documentation in the knowledgebase. The brand has historically been a popular pick for network operators because multi-node BungeeCord setups were explicitly supported rather than gated behind enterprise plans. Velocity is the correct modern choice for new networks."
+  - question: "What hardware will I get on a new MCProHosting order?"
+    answer: "New orders are provisioned on the Apex Hosting infrastructure, which uses a mix of AMD Ryzen 9 7950X, Ryzen 9 5900X, Ryzen 7 5800X, and some Xeon Gold 6348 systems depending on the region, with NVMe storage and ECC memory in most datacenters. The legacy Xeon E5-2600 fleet is being wound down."
+  - question: "Does MCProHosting still partner with content creators?"
+    answer: "The historical creator roster (CaptainSparklez, SkyDoesMinecraft, iHasCupQuake, Aureylian, others) was assembled under the pre-acquisition brand. Most of those partnerships are historical; the brand no longer actively recruits creators at the volume it did during its 2013-2018 peak."
+  - question: "What is the refund policy?"
+    answer: "MCProHosting offers a money-back guarantee but the window is shorter than the 7-day standard at several competitors, and exact terms vary by region and promotion. Apex Hosting, which now provisions new MCProHosting orders, offers a clearly stated 7-day money-back guarantee on first-time purchases."
 ---
 
 MCProHosting was, for the better part of a decade, the default answer to "who hosts the big Minecraft servers?" Co-founded in 2011 by a 13-year-old Matthew Salsamendi and James Boehm, the company grew out of a home lab into one of the most recognizable specialist Minecraft hosts on the market — sponsoring the early **Hypixel** network, **CaptainSparklez**, **SkyDoesMinecraft**, **iHasCupQuake**, and a long roster of YouTubers and competitive Minecraft events.

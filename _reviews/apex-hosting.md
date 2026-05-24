@@ -16,6 +16,19 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Multicraft (custom-skinned)"
 standout: "Massive datacenter footprint with one-click modpacks"
+faq:
+  - question: "Does Apex Hosting offer a free trial?"
+    answer: "No. Apex does not offer a free trial, but a 7-day money-back guarantee on first-time purchases functions as a paid trial. Sign up, test, and request a refund inside the window if it does not meet your needs."
+  - question: "Is Apex Hosting worth the price compared to Shockbyte?"
+    answer: "It depends on what you value. Shockbyte gives you roughly 30-40% more RAM per dollar, while Apex gives you better datacenter coverage, more responsive support, and a more polished panel. For a small vanilla server, Shockbyte's value is hard to beat; for a community where downtime costs you players, Apex's support and uptime usually justifies the premium."
+  - question: "What control panel does Apex use?"
+    answer: "Apex uses a custom-skinned Multicraft panel — not Pterodactyl. Multicraft is older but more conservative, with a focus on guided workflows and one-click installers. If you specifically want Pterodactyl, look at BisectHosting Premium instead."
+  - question: "Does Apex include DDoS protection on every plan?"
+    answer: "Yes. DDoS protection is included on every Apex plan at every tier, with no add-on fee. They advertise both Layer 4 and Layer 7 mitigation."
+  - question: "Can I install custom modpacks on Apex?"
+    answer: "Yes. Apex supports both one-click installation of popular modpacks via the panel's library (CurseForge, Feed The Beast, Technic, and others) and manual installation of custom or private modpacks via SFTP/file manager. They also offer a paid Modpack Creation Service add-on."
+  - question: "What CPUs does Apex Hosting actually use?"
+    answer: "The premium EX tier publicly lists AMD Ryzen 9 7950X processors with 4 dedicated vCores per instance. The standard plan CPUs are not publicly disclosed on the pricing page. If verified dedicated-core hardware matters, the EX tier is the only Apex plan with a transparent answer."
 ---
 
 Apex Hosting — often searched as "Apex Minecraft Hosting" — is one of the longest-running specialist Minecraft hosts on the market, and the company has built its reputation on two things: a global datacenter footprint and a heavy investment in customer support and documentation. It is not the cheapest provider in this comparison, and it does not pretend to be. Apex sits in the upper-mid tier of pricing, alongside [Nodecraft](/reviews/nodecraft/), and competes on polish rather than dollars-per-gigabyte.

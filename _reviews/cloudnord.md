@@ -16,6 +16,19 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Pterodactyl (heavily customised)"
 standout: "Publishes exact CPU model and clock (Ryzen 7 7700 at 4.9 GHz) at a $3.99/mo entry price — almost no competitor in this band names the silicon"
+faq:
+  - question: "Is CloudNord based in Europe?"
+    answer: "Yes. Cloud Nord Limited is a UK private limited company registered at Companies House (#13394754), headquartered in London. Its primary Minecraft datacentres are in London, Amsterdam and Nuremberg, with additional non-EU nodes on a small surcharge."
+  - question: "How does CloudNord pricing compare to Apex Hosting?"
+    answer: "CloudNord's entry plan is roughly $3.99/mo for 2 GB on Ryzen 7 / i9 hardware, versus Apex's $9.99/mo entry pricing for 1 GB. In the modded sweet spot (6 GB, 2 cores) CloudNord lands around $13-14/mo, significantly cheaper than Apex's equivalent tier while disclosing better CPU specs."
+  - question: "What CPU does CloudNord use?"
+    answer: "AMD Ryzen 7 7700 (Zen 4, 8 cores, 4.9 GHz boost on shared nodes, 5.3 GHz peak) or Intel Core i9-11900K (8 cores, up to 5.3 GHz boost), depending on the datacentre. Both are full physical cores rather than vCPU/thread splits. The Ryzen 7 7700 is the better pick for modded Minecraft."
+  - question: "Does CloudNord support modpacks?"
+    answer: "Yes. One-click installation is supported for CurseForge, Modrinth, Feed The Beast, Technic, ATLauncher and VoidsWrath. Custom JAR upload is supported for anything outside that catalogue, and the panel handles Forge, NeoForge and Fabric without manual setup."
+  - question: "What is the refund policy?"
+    answer: "A full refund is available within 3 days of purchase. That is shorter than Apex's 7-day window and shorter than most of the industry — it is the single biggest gap in CloudNord's offer for buyers who want a long evaluation runway."
+  - question: "Is the control panel Multicraft?"
+    answer: "No. CloudNord uses a heavily customised Pterodactyl panel. It is more powerful than Multicraft (live console, SFTP, scheduled tasks, MySQL, subusers) but has a steeper learning curve if you are migrating from a Multicraft-based host like Shockbyte or Apex."
 ---
 
 CloudNord is our **#2 rated Minecraft host** in both the [best cheap Minecraft server hosting](/guides/best-cheap-minecraft-server-hosting/) and [best Minecraft hosting for modpacks](/guides/best-minecraft-hosting-for-modpacks/) rankings, because they publish exactly which CPU you'll land on — an **AMD Ryzen 7 7700 boosting to 4.9 GHz**, or an **Intel Core i9-11900K** on certain nodes — at $3.99/mo for the 2 GB entry plan. That 4.9 GHz single-thread clock is the spec that actually matters for Minecraft, and almost no other host in this price band names the silicon at all.

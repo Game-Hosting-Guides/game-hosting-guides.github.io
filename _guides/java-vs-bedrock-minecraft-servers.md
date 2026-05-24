@@ -8,6 +8,15 @@ date: 2026-05-24
 last_updated: 2026-05-24
 reading_time: 9
 related_reviews: [apex-hosting, bisecthosting, nodecraft]
+faq:
+  - question: "Can my friends on mobile join a Java server?"
+    answer: "Not directly. Mobile Minecraft is Bedrock, and Bedrock clients cannot speak the Java protocol natively. The standard workaround is installing GeyserMC and Floodgate on the Java server, which lets Bedrock clients (including mobile) connect using the server's IP and the Bedrock UDP port. Most managed hosts ship Geyser as a one-click plugin."
+  - question: "Is Bedrock faster than Java for the same player count?"
+    answer: "On the server side, yes — typically 2-4× less RAM and lower CPU overhead per tick. On the client side, performance depends on the device. A high-end gaming PC running optimised Java with Sodium and Lithium will outperform Bedrock on a mid-range phone or Switch every time."
+  - question: "Which hosts in your review set support Bedrock natively?"
+    answer: "All four named in this guide — Apex Hosting, BisectHosting, Nodecraft, and Shockbyte — sell Bedrock plans as a first-class product. Java is still the default install on a generic Minecraft order, so make sure you select Bedrock at checkout if that is what you want."
+  - question: "Do I need a separate purchase of Minecraft for Bedrock and Java?"
+    answer: "For players, yes — they are sold as separate SKUs on most platforms, though Microsoft has been bundling them on Windows for several years. For the server, no — both BDS and the Java server binaries are free downloads from Mojang. You only pay for the hosting."
 ---
 
 Java and Bedrock are basically two different games when it comes to hosting. They share a brand and a blocky look, but the server software, resource demands, modding ecosystem, and audience that can connect are different enough that picking the wrong one will quietly waste money for a year. Most people land on this question after a kid or a Discord asks "can I join from my phone?" and the answer turns into a hosting decision. This guide walks through what actually changes between the two editions when you are paying for a server, with reference to [our Minecraft hosting comparison](/best-minecraft-server-hosting/).

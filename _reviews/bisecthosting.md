@@ -16,6 +16,23 @@ ddos_protection: true
 modpack_support: true
 control_panel: "Pterodactyl"
 standout: "Massive 2,300+ modpack library and 21 global datacenter locations"
+faq:
+  - question: "What's the difference between BisectHosting Budget and Premium?"
+    answer: "Budget plans are cheaper but run on denser, lower-clock CPU nodes with shared resources and no dedicated IP. Premium plans run on higher-clock CPUs with lower node contention, include a dedicated IP, and typically deliver noticeably better TPS under load. Both tiers use NVMe SSD storage, the Pterodactyl panel, the same modpack library, and the same DDoS protection."
+  - question: "How much RAM do I need for a BisectHosting Minecraft server?"
+    answer: "For vanilla: 2 GB for under 5 players, 4 GB for 10-15, 6-8 GB for 20-30. For modded servers, double those numbers — a 100-mod CurseForge pack with 10 players typically wants 8 GB, and large modpacks at 20+ players will want 12-16 GB."
+  - question: "Does BisectHosting support modpacks?"
+    answer: "Yes — modpack support is arguably BisectHosting's strongest feature. The control panel includes a one-click installer covering 2,300+ modpacks across Forge, Fabric, Paper, Spigot, CurseForge, FTB, and Technic. Pack updates can be applied from the panel without manual file work."
+  - question: "What control panel does BisectHosting use?"
+    answer: "Minecraft customers get a themed Pterodactyl panel with integrated Modrinth-powered modpack and plugin browsing, scheduled tasks, sub-user permissions, SFTP, file management, and resource monitoring. The newer multi-game BisectOne plan uses a separate panel called Starbase."
+  - question: "Where are BisectHosting's servers located?"
+    answer: "BisectHosting advertises 21 global locations spanning North America (US East/Central/West, Canada), South America (Brazil), Europe (UK, Germany, France, Finland, Poland), and Asia-Pacific (Singapore, Japan, Australia). This is one of the widest geographic footprints in Minecraft hosting."
+  - question: "Is there a refund policy?"
+    answer: "Yes — a 7-day money-back guarantee on your initial purchase. That's shorter than the 30-day window some competitors offer, so test your server thoroughly in the first week."
+  - question: "Does BisectHosting include DDoS protection?"
+    answer: "Yes, enterprise-grade DDoS protection is included free on both Budget and Premium plans. There is no separate protection add-on to pay for."
+  - question: "Do I get a dedicated IP?"
+    answer: "Premium plans include a dedicated IP. Budget plans do not — this is one of the cleaner functional differences between the two tiers and worth weighing if you have players who connect via IP rather than domain."
 ---
 
 BisectHosting is one of the most recognizable names in Minecraft hosting, and the brand has built much of that recognition around a single decision: split the catalogue into a **Budget** line and a **Premium** line, then market both side-by-side. That approach is unusual. Most hosts pretend every plan is fast; BisectHosting openly admits some are not. The trade-off is that buying a server here means choosing a tier before you choose a RAM size, and the difference between those tiers is more than cosmetic — it changes the CPU you land on, the headroom you get when a modpack spikes, and in some cases whether you get a dedicated IP at all. This review walks through both lines as they look in mid-2026, with pricing pulled directly from BisectHosting's plan selector on 2026-05-24, and tries to make the Budget-vs-Premium decision easier rather than louder.
