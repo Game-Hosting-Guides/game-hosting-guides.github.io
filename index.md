@@ -36,6 +36,28 @@ permalink: /
 {% endfor %}</tbody>
 </table>
 
+{% assign latest_videos = site.videos | sort: "published" | reverse %}
+{% if latest_videos.size > 0 %}
+<section class="video-section">
+  <h2>Latest from our YouTube channel</h2>
+  <p class="section-meta">New hosting tests, comparisons, and server tips — pulled automatically from <a href="https://www.youtube.com/@GameHostingGuides" rel="noopener" target="_blank">@GameHostingGuides</a>.</p>
+  <ul class="video-grid">
+  {% for v in latest_videos limit:4 %}
+    <li>
+      <a class="video-card" href="{{ v.url | relative_url }}">
+        <span class="thumb{% if v.video_type == 'short' %} short{% endif %}" style="background-image:url('{{ v.thumbnail }}');"></span>
+        <div class="body">
+          <h3>{{ v.title | truncate: 70 }}</h3>
+          <p class="meta">{{ v.published | date: "%b %-d, %Y" }}{% if v.video_type == 'short' %} · Short{% endif %}</p>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <p style="margin: 1.2em 0 0;"><a href="{{ '/videos/' | relative_url }}">See all videos &rarr;</a></p>
+</section>
+{% endif %}
+
 ## How we picked
 
 - **Performance signal first.** A "$3/mo for 4GB" plan on shared E5 v2 cores will choke a 15-player modded server. We weight disclosed CPU model, dedicated-core guarantees, and NVMe storage above headline RAM numbers.

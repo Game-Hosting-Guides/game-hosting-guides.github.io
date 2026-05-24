@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="video-page">
+  <header class="review-header">
+    <p class="meta"><a href="{{ '/videos/' | relative_url }}">&larr; All videos</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">Published <time datetime="{{ page.published }}">{{ page.published }}</time> on <a href="{{ page.channel_url }}" rel="noopener" target="_blank">{{ page.channel_name }}</a></p>
+  </header>
+
+  {{ content }}
+</article>
+
+<aside class="related-reviews">
+  <h2>More videos</h2>
+  <ul>
+    {% assign others = site.videos | where_exp:"v","v.url != page.url" | sort: "published" | reverse %}
+    {% for v in others limit:6 %}
+      <li><a href="{{ v.url | relative_url }}">{{ v.title | truncate: 60 }}</a></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/videos/' | relative_url }}">See all videos &rarr;</a></p>
+</aside>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "thumbnailUrl": "{{ page.thumbnail }}",
+  "uploadDate": "{{ page.published }}",
+  "contentUrl": "{{ page.video_url }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ page.video_id }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}"
+  }
+}
+</script>

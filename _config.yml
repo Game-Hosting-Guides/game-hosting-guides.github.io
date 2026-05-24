@@ -29,11 +29,19 @@ defaults:
       type: reviews
     values:
       layout: review
+  - scope:
+      path: ""
+      type: videos
+    values:
+      layout: video
 
 collections:
   reviews:
     output: true
     permalink: /reviews/:name/
+  videos:
+    output: true
+    permalink: /videos/:name/
 
 # Social / SEO tag plugin
 twitter:

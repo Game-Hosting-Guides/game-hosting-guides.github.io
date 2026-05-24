@@ -1,0 +1,43 @@
+name: Sync YouTube videos
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-youtube
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install transcript dependency
+        run: pip install --quiet youtube-transcript-api==0.6.2
+
+      - name: Run sync
+        run: python scripts/sync_youtube.py
+
+      - name: Commit and push if changed
+        run: |
+          if [ -z "$(git status --porcelain _videos/)" ]; then
+            echo "No video changes — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _videos/
+          git commit -m "auto: sync YouTube videos ($(date -u +%Y-%m-%d))"
+          git push
