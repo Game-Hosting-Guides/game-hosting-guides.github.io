@@ -5,20 +5,36 @@ description: "Independent comparison of the best Minecraft server hosting provid
 permalink: /
 ---
 
-# Best Minecraft Server Hosting in 2026
-
-Choosing a Minecraft host is mostly choosing tradeoffs: dedicated cores vs shared, NVMe vs SATA SSD, a datacenter near your players vs a cheaper region far from them, a polished panel vs raw Pterodactyl access. This page compares the providers we've reviewed side-by-side. Every cell links back to the long-form review so you can verify the numbers.
+<div class="hero">
+  <h1>Best Minecraft Server Hosting in 2026</h1>
+  <p class="lede">Independent, side-by-side reviews of the providers actually worth considering — with disclosed hardware, real pricing, and datacenter locations. No marketing copy, no recycled top-10 lists.</p>
+  <div class="hero-stats">
+    <div><span class="num">{{ site.reviews | size }}</span><span class="label">Providers reviewed</span></div>
+    <div><span class="num">{{ site.reviews | map: "locations" | join: "," | split: "," | size }}+</span><span class="label">Datacenter locations covered</span></div>
+    <div><span class="num">2026-05</span><span class="label">Last updated</span></div>
+  </div>
+</div>
 
 > **Methodology:** every provider listed here has a [full review](#full-reviews). Pricing reflects the cheapest publicly listed Minecraft plan in USD as of the review's `last_updated` date. CPU and RAM allocation type (dedicated vs shared) is taken from the provider's own published specifications — when undisclosed, we say so rather than guess.
 
 ## Comparison table
 
-<!-- This table is auto-curated after each review is published. Columns: provider, starting price, starting RAM, CPU, locations, standout feature, link. -->
-
-| Provider | From (USD/mo) | RAM at entry | CPU | Locations | Standout | Review |
-|---|---|---|---|---|---|---|
-{% assign reviews = site.reviews | sort: "rating" | reverse %}{% for r in reviews %}| **{{ r.provider_name }}** | ${{ r.starting_price_usd }} | {{ r.starting_ram_gb }} GB | {{ r.cpu }} | {{ r.locations | join: ", " }} | {{ r.standout | default: "—" }} | [Read review]({{ r.url | relative_url }}) |
-{% endfor %}
+<table>
+<thead>
+<tr><th>Provider</th><th>From</th><th>RAM</th><th>CPU</th><th>Locations</th><th>Standout</th><th></th></tr>
+</thead>
+<tbody>
+{% assign reviews = site.reviews | sort: "rating" | reverse %}{% for r in reviews %}<tr>
+  <td><strong>{{ r.provider_name }}</strong> <span style="display:inline-block; background:var(--accent-soft); color:var(--accent-dark); padding:1px 8px; border-radius:999px; font-size:0.75rem; font-weight:700; margin-left:4px;">★ {{ r.rating }}</span></td>
+  <td>${{ r.starting_price_usd }}/mo</td>
+  <td>{{ r.starting_ram_gb }} GB</td>
+  <td>{{ r.cpu | truncate: 60 }}</td>
+  <td>{{ r.locations | join: ", " | truncate: 80 }}</td>
+  <td>{{ r.standout | default: "—" }}</td>
+  <td><a href="{{ r.url | relative_url }}">Read review &rarr;</a></td>
+</tr>
+{% endfor %}</tbody>
+</table>
 
 ## How we picked
 

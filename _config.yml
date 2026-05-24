@@ -25,7 +25,8 @@ defaults:
     values:
       layout: default
   - scope:
-      path: "reviews"
+      path: ""
+      type: reviews
     values:
       layout: review
 
