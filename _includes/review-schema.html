@@ -4,19 +4,19 @@
   "@type": "Review",
   "itemReviewed": {
     "@type": "Service",
-    "name": "{{ page.provider_name | escape }}",
+    "name": {{ page.provider_name | jsonify }},
     "url": "{{ page.provider_url | escape }}",
     "provider": {
       "@type": "Organization",
-      "name": "{{ page.provider_name | escape }}",
+      "name": {{ page.provider_name | jsonify }},
       "url": "{{ page.provider_url | escape }}"
     },
     "serviceType": "Minecraft server hosting"
   },
   "author": {
-    "@type": "Organization",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ site.url }}"
+    "@type": "Person",
+    "name": {{ site.author.name | default: "Wild Nature" | jsonify }},
+    "url": "{{ site.url }}{{ site.author.url | default: '/about/' }}"
   },
   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
   "dateModified": "{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}",
@@ -26,12 +26,16 @@
     "bestRating": "10",
     "worstRating": "1"
   },
-  "name": "{{ page.title | escape }}",
-  "reviewBody": "{{ page.description | escape }}",
+  "name": {{ page.title | jsonify }},
+  "reviewBody": {{ page.description | jsonify }},
   "publisher": {
     "@type": "Organization",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ site.url }}"
+    "name": {{ site.publisher | default: site.title | jsonify }},
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/img/logo.jpg' | absolute_url }}"
+    }
   }
 }
 </script>
