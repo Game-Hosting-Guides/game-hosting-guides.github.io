@@ -25,7 +25,7 @@ permalink: /
 </thead>
 <tbody>
 {% assign reviews = site.reviews | sort: "rating" | reverse %}{% for r in reviews %}<tr>
-  <td><strong>{{ r.provider_name }}</strong> <span style="display:inline-block; background:var(--accent-soft); color:var(--accent-dark); padding:1px 8px; border-radius:999px; font-size:0.75rem; font-weight:700; margin-left:4px;">★ {{ r.rating }}</span></td>
+  <td><strong>{{ r.provider_name }}</strong> <span class="rating-chip">★ {{ r.rating }}</span></td>
   <td>${{ r.starting_price_usd }}/mo</td>
   <td>{{ r.starting_ram_gb }} GB</td>
   <td>{{ r.cpu | truncate: 60 }}</td>
