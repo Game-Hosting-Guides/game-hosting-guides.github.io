@@ -7,8 +7,9 @@ layout: default
     <h1>{{ page.title }}</h1>
     {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
     <p class="meta">
-      {% if page.last_updated %}Last updated <time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time>{% endif %}
-      {% if page.reading_time %} · {{ page.reading_time }} min read{% endif %}
+      By <a href="{{ site.author.url | relative_url }}" rel="author">{{ site.author.name }}</a>
+      {% if page.last_updated %} &middot; Last updated <time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time>{% endif %}
+      {% if page.reading_time %} &middot; {{ page.reading_time }} min read{% endif %}
     </p>
   </header>
 
@@ -39,13 +40,13 @@ layout: default
   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
   "dateModified": "{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}",
   "author": {
-    "@type": "Organization",
-    "name": "Game Hosting Guides",
-    "url": "{{ site.url }}"
+    "@type": "Person",
+    "name": {{ site.author.name | default: "Wild Nature" | jsonify }},
+    "url": "{{ site.url }}{{ site.author.url | default: '/about/' }}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Game Hosting Guides",
+    "name": {{ site.publisher | default: site.title | jsonify }},
     "url": "{{ site.url }}",
     "logo": {
       "@type": "ImageObject",
@@ -58,3 +59,4 @@ layout: default
   }
 }
 </script>
+

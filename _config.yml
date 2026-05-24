@@ -2,7 +2,11 @@ title: "Game Hosting Guides"
 description: "Independent, in-depth reviews and comparisons of Minecraft and game server hosting providers. Real-world tests, transparent pricing, and disclosed hardware specs."
 url: "https://gamehostingguides.com"
 baseurl: ""
-author: "Game Hosting Guides"
+author:
+  name: "Wild Nature"
+  url: "/about/"
+publisher: "Game Hosting Guides"
+contact_email: "ghguides@proton.me"
 lang: en_US
 timezone: UTC
 logo: /assets/img/logo.jpg

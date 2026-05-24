@@ -9,6 +9,10 @@ permalink: /about/
 
 Game Hosting Guides publishes independent, in-depth reviews of Minecraft and game server hosting providers. Every review is written after hands-on research into the provider's plans, infrastructure, support quality, and real-world performance.
 
+## The editor
+
+Reviews and guides on this site are written and maintained by **Wild Nature**, who runs the [Game Hosting Guides YouTube channel](https://www.youtube.com/@GameHostingGuides) and has been running Minecraft servers since 2014 — from 4-player vanilla survival up to modpack networks with hundreds of concurrent players. The editorial perspective is "what would I actually pay for myself" rather than "which provider has the best affiliate payout."
+
 ## How we review
 
 Each provider is evaluated on the same criteria:

@@ -3,6 +3,7 @@ layout: default
 ---
 <article class="review" itemscope itemtype="https://schema.org/Review">
   <header class="review-header">
+    <span class="eyebrow">Review &middot; {{ page.provider_name }}</span>
     <h1 itemprop="name">{{ page.title }}</h1>
     {% if page.rating %}
     <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
@@ -12,7 +13,10 @@ layout: default
       <strong>{{ page.rating }} / 10</strong>
     </div>
     {% endif %}
-    {% if page.last_updated %}<p class="meta">Last updated: <time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time></p>{% endif %}
+    <p class="meta">
+      By <a href="{{ site.author.url | relative_url }}" rel="author">{{ site.author.name }}</a>
+      {% if page.last_updated %} &middot; Last updated <time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time>{% endif %}
+    </p>
   </header>
 
   <div itemprop="reviewBody">
@@ -22,7 +26,7 @@ layout: default
   {% if page.provider_name %}
   <meta itemprop="itemReviewed" content="{{ page.provider_name }}">
   {% endif %}
-  <meta itemprop="author" content="{{ site.author }}">
+  <meta itemprop="author" content="{{ site.author.name }}">
 
   {% include review-schema.html %}
 </article>

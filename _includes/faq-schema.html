@@ -1,0 +1,27 @@
+{% comment %}
+FAQPage JSON-LD. Expects page.faq to be an array of {question, answer}.
+Example front matter:
+  faq:
+    - question: "How much RAM do I need?"
+      answer: "Vanilla: 2 GB. Modded: 6 GB+."
+{% endcomment %}
+{% if page.faq and page.faq.size > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
