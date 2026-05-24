@@ -63,6 +63,46 @@ permalink: /
   </ul>
 </section>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Featured Minecraft hosting reviews",
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "numberOfItems": 3,
+  "itemListElement": [
+    {% assign featured_schema = site.reviews | sort: "rating" | reverse %}
+    {% for r in featured_schema limit: 3 %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ r.url | absolute_url }}",
+      "item": {
+        "@type": "Review",
+        "name": {{ r.title | jsonify }},
+        "url": "{{ r.url | absolute_url }}",
+        "itemReviewed": {
+          "@type": "Service",
+          "name": {{ r.provider_name | jsonify }},
+          "url": "{{ r.provider_url | escape }}"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "{{ r.rating }}",
+          "bestRating": "10",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Person",
+          "name": {{ site.author.name | default: "Wild Nature" | jsonify }}
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
 <section class="section">
   <div class="section-head">
     <div>
