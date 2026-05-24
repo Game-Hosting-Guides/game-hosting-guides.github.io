@@ -542,17 +542,37 @@ tbody td:first-child { font-weight: 600; color: var(--fg); }
 }
 @media (max-width: 760px) {
   body { font-size: 16px; }
-  .content { padding: 32px 0 64px; }
-  h1 { font-size: 1.9rem; }
-  .hero h1 { font-size: 2.1rem; }
+  .wrap { padding: 0 18px; }
+  .content { padding: 28px 18px 64px; }       /* restored horizontal padding (was 0) */
+  h1 { font-size: 1.85rem; }
+  .hero { padding: 18px 0 12px; }
+  .hero h1 { font-size: 2rem; line-height: 1.1; }
   .hero .lede { font-size: 1.05rem; }
-  .review-header h1 { font-size: 1.9rem; }
-  nav { gap: 16px; }
-  nav a { font-size: 0.86rem; }
-  table { font-size: 0.88rem; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .hero-ctas { gap: 10px; }
+  .hero-ctas .btn { width: 100%; text-align: center; }
+  .review-header h1 { font-size: 1.85rem; }
+  .site-header .wrap { padding-top: 12px; padding-bottom: 12px; }
+  nav { gap: 14px; }
+  nav a { font-size: 0.85rem; }
+  .site-title { font-size: 1rem; gap: 10px; }
+  .site-logo { width: 30px; height: 30px; }
+  table { font-size: 0.86rem; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   thead th, tbody td { padding: 10px 10px; }
-  .hero-stats { gap: 22px; padding: 16px 0; }
-  .hero-stats .num { font-size: 1.5rem; }
-  .site-footer .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
-  .site-logo { width: 32px; height: 32px; }
+  .hero-stats { gap: 18px; padding: 14px 0; }
+  .hero-stats .num { font-size: 1.4rem; }
+  .featured-grid, .review-grid, .video-grid { gap: 14px; }
+  .featured-card, .review-card { padding: 18px 20px 20px; }
+  .related-reviews { padding: 22px 0; }
+  .related-reviews ul { grid-template-columns: 1fr; gap: 0; }
+  .section { margin: 2.4em 0; }
+  .pull { font-size: 1.2rem; padding-left: 0.9em; }
+  .video-page, .review { max-width: 100%; }
+  .site-footer { padding: 32px 0 28px; }
+  .site-footer .footer-grid { grid-template-columns: 1fr 1fr; gap: 22px; }
+  blockquote { padding: 0.5em 1em; margin: 1.2em 0; }
+  h2 { font-size: 1.45rem; margin-top: 1.8em; }
+  h3 { font-size: 1.1rem; }
+}
+@media (max-width: 420px) {
+  .site-footer .footer-grid { grid-template-columns: 1fr; }
 }
