@@ -76,7 +76,6 @@ permalink: /
     {
       "@type": "ListItem",
       "position": {{ forloop.index }},
-      "url": "{{ r.url | absolute_url }}",
       "item": {
         "@type": "Review",
         "name": {{ r.title | jsonify }},
