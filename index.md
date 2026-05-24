@@ -82,7 +82,7 @@ permalink: /
         "name": {{ r.title | jsonify }},
         "url": "{{ r.url | absolute_url }}",
         "itemReviewed": {
-          "@type": "Service",
+          "@type": "Organization",
           "name": {{ r.provider_name | jsonify }},
           "url": "{{ r.provider_url | escape }}"
         },

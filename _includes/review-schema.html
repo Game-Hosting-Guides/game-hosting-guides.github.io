@@ -3,15 +3,10 @@
   "@context": "https://schema.org",
   "@type": "Review",
   "itemReviewed": {
-    "@type": "Service",
+    "@type": "Organization",
     "name": {{ page.provider_name | jsonify }},
     "url": "{{ page.provider_url | escape }}",
-    "provider": {
-      "@type": "Organization",
-      "name": {{ page.provider_name | jsonify }},
-      "url": "{{ page.provider_url | escape }}"
-    },
-    "serviceType": "Minecraft server hosting"
+    "description": "Minecraft server hosting provider"
   },
   "author": {
     "@type": "Person",
