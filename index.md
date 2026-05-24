@@ -10,7 +10,7 @@ permalink: /
   <h1>Independent reviews of <em>game server hosting</em>, written by people who actually run servers.</h1>
   <p class="lede">We test Minecraft hosting providers in real-world conditions and publish the results — long-form written reviews, YouTube tests, and side-by-side comparisons with disclosed hardware specs. No recycled top-10 lists.</p>
   <div class="hero-ctas">
-    <a class="btn btn--primary" href="{{ '/best-minecraft-server-hosting/' | relative_url }}">See our 2026 picks</a>
+    <a class="btn btn--primary" href="{{ '/guides/' | relative_url }}">Read the guides</a>
     <a class="btn btn--ghost" href="{{ site.youtube_url }}" rel="noopener" target="_blank">Watch the channel</a>
   </div>
 </section>
