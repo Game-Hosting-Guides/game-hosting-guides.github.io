@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<article class="review">
+  <header class="review-header">
+    {% if page.category %}<span class="eyebrow">{{ page.category }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+    <p class="meta">
+      {% if page.last_updated %}Last updated <time datetime="{{ page.last_updated }}">{{ page.last_updated }}</time>{% endif %}
+      {% if page.reading_time %} · {{ page.reading_time }} min read{% endif %}
+    </p>
+  </header>
+
+  {{ content }}
+</article>
+
+{% if page.related_reviews and page.related_reviews.size > 0 %}
+<aside class="related-reviews">
+  <h2>Reviews referenced in this guide</h2>
+  <ul>
+    {% for slug in page.related_reviews %}
+      {% assign r = site.reviews | where: "slug", slug | first %}
+      {% if r %}
+        <li><a href="{{ r.url | relative_url }}">{{ r.provider_name }} review &mdash; ★ {{ r.rating }} / 10</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">&larr; See the full comparison table</a></p>
+</aside>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_updated | default: page.date | date: '%Y-%m-%d' }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Game Hosting Guides",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Game Hosting Guides",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/img/logo.jpg' | absolute_url }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>

@@ -35,6 +35,11 @@ defaults:
       type: videos
     values:
       layout: video
+  - scope:
+      path: ""
+      type: guides
+    values:
+      layout: guide
 
 collections:
   reviews:
@@ -43,6 +48,9 @@ collections:
   videos:
     output: true
     permalink: /videos/:name/
+  guides:
+    output: true
+    permalink: /guides/:name/
 
 # Social profiles — used by jekyll-seo-tag and our Organization schema include
 twitter:
