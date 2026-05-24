@@ -1,0 +1,62 @@
+name: Sync Wiki
+
+# Pushes the contents of /_wiki/*.md in the main repo into the
+# .wiki.git repo whenever those files change on `main`. The wiki must
+# be initialized once via the GitHub UI (visit the Wiki tab and create
+# any first page) before this workflow can succeed — wiki repos do not
+# exist on the server until the first manual edit.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_wiki/**'
+      - '.github/workflows/sync-wiki.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-wiki
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+
+      - name: Clone wiki and sync
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          WIKI_URL="https://x-access-token:${GH_TOKEN}@github.com/${GH_REPO}.wiki.git"
+
+          if ! git clone --depth 1 "$WIKI_URL" wiki 2>/dev/null; then
+            echo "::error::Wiki repo not initialized. Visit https://github.com/${GH_REPO}/wiki and click 'Create the first page' (any title, any content) — then re-run this workflow."
+            exit 1
+          fi
+
+          # Replace any tracked wiki pages with what's in _wiki/.
+          # Only manage top-level .md files so users can still add hand-edited
+          # pages in subdirectories via the wiki UI if they ever want to.
+          find wiki -maxdepth 1 -name "*.md" -type f -delete
+          cp _wiki/*.md wiki/
+
+          cd wiki
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No wiki changes to sync."
+            exit 0
+          fi
+
+          git add -A
+          git commit -m "auto: sync _wiki/ from main repo (${GITHUB_SHA:0:7})"
+          git push
+          echo "Wiki synced."

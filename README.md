@@ -1,4 +1,4 @@
-# Game Hosting Guides
+# Best Minecraft Server Hosting Reviews (2026) — Game Hosting Guides
 
 [![Visit site](https://img.shields.io/badge/site-gamehostingguides.com-c08a14)](https://gamehostingguides.com)
 [![YouTube](https://img.shields.io/badge/YouTube-%40GameHostingGuides-red)](https://www.youtube.com/@GameHostingGuides)
