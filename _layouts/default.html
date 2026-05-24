@@ -23,7 +23,8 @@
     "sameAs": [
       "{{ site.youtube_url }}",
       "{{ site.tiktok_url }}",
-      "{{ site.github_org_url }}"
+      "{{ site.github_org_url }}",
+      "{{ site.discord_url | absolute_url }}"
     ]
   }
   </script>
@@ -55,11 +56,11 @@
         </span>
       </a>
       <nav>
-        <a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">Best Hosting</a>
         <a href="{{ '/reviews/' | relative_url }}">Reviews</a>
         <a href="{{ '/guides/' | relative_url }}">Guides</a>
         <a href="{{ '/videos/' | relative_url }}">Videos</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
+        <a class="nav-cta" href="{{ site.discord_url }}">Discord</a>
       </nav>
     </div>
   </header>
@@ -81,8 +82,8 @@
         <div>
           <h4>Site</h4>
           <ul>
-            <li><a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">Best Minecraft hosting</a></li>
             <li><a href="{{ '/reviews/' | relative_url }}">All reviews</a></li>
+            <li><a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">Best Minecraft hosting</a></li>
             <li><a href="{{ '/guides/' | relative_url }}">Guides</a></li>
             <li><a href="{{ '/videos/' | relative_url }}">Videos</a></li>
             <li><a href="{{ '/about/' | relative_url }}">About</a></li>
@@ -91,6 +92,7 @@
         <div>
           <h4>Follow</h4>
           <ul>
+            <li><a href="{{ site.discord_url }}">Discord</a></li>
             <li><a href="{{ site.youtube_url }}" rel="noopener" target="_blank">YouTube</a></li>
             <li><a href="{{ site.tiktok_url }}" rel="noopener" target="_blank">TikTok</a></li>
             <li><a href="{{ site.github_org_url }}" rel="noopener" target="_blank">GitHub</a></li>

@@ -67,6 +67,7 @@ social:
 youtube_url: "https://www.youtube.com/@GameHostingGuides"
 tiktok_url: "https://www.tiktok.com/@gamehostingguides"
 github_org_url: "https://github.com/Game-Hosting-Guides"
+discord_url: "/discord"
 
 exclude:
   - README.md
