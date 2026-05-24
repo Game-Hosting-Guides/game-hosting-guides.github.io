@@ -61,9 +61,9 @@ Each provider is evaluated on the same criteria:
 
 When a provider doesn't publish a specification (e.g., the exact CPU model on a budget tier), we write **"not publicly disclosed"** rather than guess. Some outbound links to providers are affiliate links, disclosed in [About](https://gamehostingguides.com/about/) — affiliate status never affects scoring; several listed providers have no affiliate program at all.
 
-## Contributing
+## Contributing / corrections
 
-Spotted an outdated price, broken link, or factual mistake? Open an issue or a pull request — every review is a plain `.md` file in [`_reviews/`](./_reviews/).
+Spotted an outdated price, broken link, or factual mistake? Use the [contact form](https://gamehostingguides.com/contact/) on the site — every report goes straight to the editor and gets actioned.
 
 ## Local development
 

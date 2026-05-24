@@ -29,4 +29,4 @@ Some outbound links to hosting providers may be affiliate links. We earn a commi
 
 ## Contact
 
-Issues, corrections, or provider submissions: open an issue on our [GitHub repo](https://github.com/Game-Hosting-Guides/game-hosting-guides.github.io).
+Spotted an outdated price, a broken link, or a host we should review? [Get in touch via our contact page](/contact/).

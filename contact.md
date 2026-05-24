@@ -32,6 +32,6 @@ permalink: /contact/
   <ul>
     <li><a href="{{ site.discord_url }}">Discord</a> &mdash; community discussion</li>
     <li><a href="{{ site.youtube_url }}" rel="noopener" target="_blank">YouTube</a> &mdash; comments on the latest video usually get a reply</li>
-    <li><a href="{{ site.github_org_url }}/game-hosting-guides.github.io/issues" rel="noopener" target="_blank">GitHub Issues</a> &mdash; for site bugs, factual corrections, or content suggestions you'd like tracked publicly</li>
+    <li><a href="{{ site.github_org_url }}" rel="noopener" target="_blank">GitHub</a> &mdash; if you'd like to read the site's open-source markdown directly</li>
   </ul>
 </section>
