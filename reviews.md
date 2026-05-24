@@ -26,4 +26,4 @@ Every provider we've reviewed, ranked by our score. Click a card for the full lo
 {% endfor %}
 </ul>
 
-<p><a href="{{ '/' | relative_url }}">&larr; Back to comparison table</a></p>
+<p><a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">&larr; See the comparison table</a></p>

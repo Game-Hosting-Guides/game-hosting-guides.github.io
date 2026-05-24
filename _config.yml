@@ -1,15 +1,16 @@
 title: "Game Hosting Guides"
-description: "Independent, in-depth reviews and comparisons of Minecraft and game server hosting providers. Real-world benchmarks, pricing breakdowns, and feature analysis to help you pick the right host."
-url: "https://game-hosting-guides.github.io"
+description: "Independent, in-depth reviews and comparisons of Minecraft and game server hosting providers. Real-world tests, transparent pricing, and disclosed hardware specs."
+url: "https://gamehostingguides.com"
 baseurl: ""
 author: "Game Hosting Guides"
 lang: en_US
 timezone: UTC
+logo: /assets/img/logo.jpg
+image: /assets/img/logo.jpg
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /reviews/:slug/
 
 plugins:
   - jekyll-seo-tag
@@ -17,7 +18,7 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
-# SEO defaults
+# SEO / layout defaults
 defaults:
   - scope:
       path: ""
@@ -43,17 +44,22 @@ collections:
     output: true
     permalink: /videos/:name/
 
-# Social / SEO tag plugin
+# Social profiles — used by jekyll-seo-tag and our Organization schema include
 twitter:
-  username: gamehostguides
+  username: gamehostingguides
   card: summary_large_image
 
 social:
   name: Game Hosting Guides
   links:
+    - https://www.youtube.com/@GameHostingGuides
+    - https://www.tiktok.com/@gamehostingguides
     - https://github.com/Game-Hosting-Guides
 
-# Exclude from build
+youtube_url: "https://www.youtube.com/@GameHostingGuides"
+tiktok_url: "https://www.tiktok.com/@gamehostingguides"
+github_org_url: "https://github.com/Game-Hosting-Guides"
+
 exclude:
   - README.md
   - Gemfile
@@ -61,3 +67,4 @@ exclude:
   - vendor
   - .gitignore
   - node_modules
+  - scripts

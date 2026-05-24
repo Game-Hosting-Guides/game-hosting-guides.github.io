@@ -7,19 +7,53 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" type="image/jpeg" href="{{ '/assets/img/logo.jpg' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/img/logo.jpg' | relative_url }}">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#fbfaf6">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Game Hosting Guides",
+    "alternateName": "GameHostingGuides",
+    "url": "{{ site.url }}",
+    "logo": "{{ '/assets/img/logo.jpg' | absolute_url }}",
+    "description": {{ site.description | jsonify }},
+    "sameAs": [
+      "{{ site.youtube_url }}",
+      "{{ site.tiktok_url }}",
+      "{{ site.github_org_url }}"
+    ]
+  }
+  </script>
+
+  {% if page.url == '/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Game Hosting Guides",
+    "url": "{{ site.url }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Game Hosting Guides",
+      "url": "{{ site.url }}"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="site-title" href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="" class="site-logo" width="32" height="32" loading="eager">
+        <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="" class="site-logo" width="36" height="36" loading="eager">
         <span>{{ site.title }}</span>
       </a>
       <nav>
-        <a href="{{ '/' | relative_url }}">Best Minecraft Hosting</a>
-        <a href="{{ '/reviews/' | relative_url }}">All Reviews</a>
+        <a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">Best Hosting</a>
+        <a href="{{ '/reviews/' | relative_url }}">Reviews</a>
         <a href="{{ '/videos/' | relative_url }}">Videos</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
       </nav>
@@ -32,7 +66,37 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. Independent reviews. Some links may be affiliate links — this never affects scoring.</p>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="" width="40" height="40">
+            <strong>Game Hosting Guides</strong>
+          </div>
+          <p style="margin: 14px 0 0;">Independent reviews and tests of game server hosting providers. Written, recorded, and published in the open.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="{{ '/best-minecraft-server-hosting/' | relative_url }}">Best Minecraft hosting</a></li>
+            <li><a href="{{ '/reviews/' | relative_url }}">All reviews</a></li>
+            <li><a href="{{ '/videos/' | relative_url }}">Videos</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="{{ site.youtube_url }}" rel="noopener" target="_blank">YouTube</a></li>
+            <li><a href="{{ site.tiktok_url }}" rel="noopener" target="_blank">TikTok</a></li>
+            <li><a href="{{ site.github_org_url }}" rel="noopener" target="_blank">GitHub</a></li>
+            <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; {{ 'now' | date: '%Y' }} Game Hosting Guides. Independent reviews.</span>
+        <span>Some outbound links may be affiliate — never affects scoring.</span>
+      </div>
     </div>
   </footer>
 </body>

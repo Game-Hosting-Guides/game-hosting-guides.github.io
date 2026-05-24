@@ -1,0 +1,27 @@
+# Game Hosting Guides
+
+> Independent reviews and comparisons of Minecraft and game server hosting providers. We test hosts in real-world conditions and publish results as long-form written reviews and YouTube videos.
+
+## Reviews
+
+- [Best Minecraft Server Hosting 2026 — comparison](https://gamehostingguides.com/best-minecraft-server-hosting/): Side-by-side comparison of 9 providers with disclosed hardware specs, pricing, and datacenter locations.
+- [Apex Hosting review](https://gamehostingguides.com/reviews/apex-hosting/): Polished, well-supported Minecraft host with 18 datacenter locations and one-click modpacks.
+- [BisectHosting review](https://gamehostingguides.com/reviews/bisecthosting/): 2,300+ modpack library and 21 global datacenters; Budget vs Premium tier comparison.
+- [CloudNord review](https://gamehostingguides.com/reviews/cloudnord/): EU-native hosting with publicly disclosed Ryzen 7 7700 / i9-11900K hardware.
+- [Hostinger review](https://gamehostingguides.com/reviews/hostinger/): VPS-based Minecraft hosting with AMD EPYC and KVM virtualization.
+- [MCProHosting review](https://gamehostingguides.com/reviews/mcprohosting/): Legacy creator-partnered host, now operating under Apex Hosting after Nitrado acquisition.
+- [Nodecraft review](https://gamehostingguides.com/reviews/nodecraft/): Polished NodePanel with one-click swap between 59+ games on the same server.
+- [Server.pro review](https://gamehostingguides.com/reviews/server-pro/): Genuinely free tier with a real paid upgrade path.
+- [ServerPrism review](https://gamehostingguides.com/reviews/serverprism/): Single plan splittable across multiple game servers, proxies, databases, and bots.
+- [Shockbyte review](https://gamehostingguides.com/reviews/shockbyte/): Budget Minecraft hosting with global node coverage including Sydney and Singapore.
+
+## Videos
+
+- [@GameHostingGuides on YouTube](https://www.youtube.com/@GameHostingGuides): Real-world hosting tests, comparisons, and server tips.
+- [@gamehostingguides on TikTok](https://www.tiktok.com/@gamehostingguides): Short-form hosting clips.
+- [All videos](https://gamehostingguides.com/videos/): Companion pages with embeds, summaries, and links to relevant reviews.
+
+## About
+
+- [Methodology](https://gamehostingguides.com/about/): How we test, score, and disclose affiliate relationships.
+- [Source on GitHub](https://github.com/Game-Hosting-Guides/game-hosting-guides.github.io): Site is open-source; every review file is editable and version-controlled.

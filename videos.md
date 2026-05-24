@@ -29,4 +29,4 @@ permalink: /videos/
 </ul>
 {% endif %}
 
-<p><a href="{{ '/' | relative_url }}">&larr; Back to comparison table</a></p>
+<p><a href="{{ '/' | relative_url }}">&larr; Back to home</a></p>

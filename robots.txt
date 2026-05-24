@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://game-hosting-guides.github.io/sitemap.xml
+Sitemap: https://gamehostingguides.com/sitemap.xml
