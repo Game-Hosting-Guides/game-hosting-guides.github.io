@@ -295,6 +295,10 @@ tbody td:first-child { font-weight: 600; color: var(--fg); }
 }
 .rating { font-size: 0.9rem; padding: 5px 13px; margin: 0.5em 0; }
 .rating::before, .rating-chip::before, .card-rating::before { content: "★"; }
+/* the global `strong { color: var(--fg) }` rule applies directly to the inner
+   <strong>, beating the chip's inherited color — which rendered the score
+   near-black on the near-black chip. Keep the chip's own color instead. */
+.rating strong, .rating-chip strong, .card-rating strong { color: inherit; }
 
 .meta { color: var(--muted); font-size: 0.88rem; margin: 0.3em 0; font-family: var(--sans); }
 

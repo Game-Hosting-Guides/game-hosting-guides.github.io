@@ -4,8 +4,8 @@ title: "Why Is My Minecraft Server Lagging? How to Diagnose and Fix Low TPS (202
 description: "A practical 2026 guide to diagnosing Minecraft server lag — how to tell TPS lag from network lag, what actually causes each, and which fixes are worth paying for."
 category: "Educational"
 slug: why-is-my-minecraft-server-lagging
-date: 2026-07-07
-last_updated: 2026-07-07
+date: 2026-07-22
+last_updated: 2026-07-22
 reading_time: 9
 related_reviews: [shockbyte, server-pro, bisecthosting, apex-hosting]
 faq:
