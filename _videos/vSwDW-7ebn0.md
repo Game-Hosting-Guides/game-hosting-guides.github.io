@@ -6,7 +6,7 @@ video_url: "https://www.youtube.com/shorts/vSwDW-7ebn0"
 video_type: "short"
 thumbnail: "https://i3.ytimg.com/vi/vSwDW-7ebn0/hqdefault.jpg"
 published: "2026-07-22"
-last_updated: "2026-07-22"
+last_updated: "2026-08-25"
 channel_name: "Game Hosting Guides"
 channel_url: "https://www.youtube.com/@GameHostingGuides"
 ---

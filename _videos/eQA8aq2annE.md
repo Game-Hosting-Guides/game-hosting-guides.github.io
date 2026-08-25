@@ -6,7 +6,7 @@ video_url: "https://www.youtube.com/watch?v=eQA8aq2annE"
 video_type: "video"
 thumbnail: "https://i2.ytimg.com/vi/eQA8aq2annE/hqdefault.jpg"
 published: "2026-08-23"
-last_updated: "2026-08-23"
+last_updated: "2026-08-25"
 channel_name: "Game Hosting Guides"
 channel_url: "https://www.youtube.com/@GameHostingGuides"
 mentioned_providers: ["Apex Hosting", "Shockbyte", "BisectHosting", "ServerPrism"]
