@@ -3,6 +3,7 @@ layout: default
 title: "Minecraft Hosting Reviews"
 description: "Every Minecraft hosting provider we've reviewed — independent, in-depth, with disclosed hardware specs. Plus our full comparison of the best hosts."
 permalink: /reviews/
+image: /assets/img/og-reviews.png
 ---
 
 <section class="hero">

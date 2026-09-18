@@ -3,6 +3,7 @@ layout: default
 title: "Minecraft Hosting Guides and Comparisons"
 description: "Practical guides for picking, sizing, and getting the most out of Minecraft server hosting — buying advice, comparisons, and explainers."
 permalink: /guides/
+image: /assets/img/og-guides.png
 ---
 
 <section class="hero">

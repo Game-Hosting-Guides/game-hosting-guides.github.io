@@ -3,6 +3,7 @@ layout: default
 title: "Best Minecraft Server Hosting (2026): Compared and Reviewed"
 description: "Side-by-side comparison of the best Minecraft server hosting providers in 2026 — disclosed CPU specs, pricing per GB of RAM, datacenter locations, and links to full reviews of each host."
 permalink: /best-minecraft-server-hosting/
+image: /assets/img/og-comparison.png
 last_updated: 2026-09-18
 faq:
   - question: "How much RAM do I actually need for a Minecraft server?"

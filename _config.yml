@@ -34,25 +34,25 @@ defaults:
       type: pages
     values:
       layout: default
-      image: /assets/img/logo.jpg
+      image: /assets/img/og-default.png
   - scope:
       path: ""
       type: reviews
     values:
       layout: review
-      image: /assets/img/logo.jpg
+      image: /assets/img/og-reviews.png
   - scope:
       path: ""
       type: videos
     values:
       layout: video
-      image: /assets/img/logo.jpg
+      image: /assets/img/og-default.png
   - scope:
       path: ""
       type: guides
     values:
       layout: guide
-      image: /assets/img/logo.jpg
+      image: /assets/img/og-guides.png
 
 collections:
   reviews:

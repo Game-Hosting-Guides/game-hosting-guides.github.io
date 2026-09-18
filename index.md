@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Game Hosting Guides — Independent Game Server Hosting Reviews"
+title: "Independent Minecraft & Game Server Hosting Reviews"
 description: "We test and review Minecraft and game server hosting providers in real-world conditions. Long-form written reviews, YouTube videos, and transparent comparisons."
+image: /assets/img/og-comparison.png
 permalink: /
 ---
 
