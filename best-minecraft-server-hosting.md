@@ -3,6 +3,7 @@ layout: default
 title: "Best Minecraft Server Hosting (2026): Compared and Reviewed"
 description: "Side-by-side comparison of the best Minecraft server hosting providers in 2026 — disclosed CPU specs, pricing per GB of RAM, datacenter locations, and links to full reviews of each host."
 permalink: /best-minecraft-server-hosting/
+last_updated: 2026-09-18
 faq:
   - question: "How much RAM do I actually need for a Minecraft server?"
     answer: "Vanilla, 1-5 players: 2 GB is fine. 6-15 players or light plugins: 4 GB. Modded (50-100 mods) or 15-30 players: 6-8 GB. Large modpacks or 50+ players: 10 GB+ and dedicated CPU cores matter more than RAM at that point."
@@ -15,15 +16,17 @@ faq:
 ---
 
 <section class="hero">
-  <span class="eyebrow">Comparison · Updated May 2026</span>
+  <span class="eyebrow">Comparison · Updated {{ page.last_updated | date: "%B %Y" }}</span>
   <h1>Best Minecraft server hosting in 2026</h1>
   <p class="lede">Side-by-side comparison of the providers actually worth considering — with disclosed hardware, real pricing, and datacenter locations. Every entry links to a full long-form review.</p>
 </section>
 
+<p><strong>The short answer:</strong> our top-rated Minecraft host in 2026 is <a href="/reviews/serverprism/">ServerPrism</a> (9.0/10), followed by <a href="/reviews/cloudnord/">CloudNord</a> (8.7) and <a href="/reviews/nodecraft/">Nodecraft</a> (8.5). For the cheapest credible plan, <a href="/reviews/shockbyte/">Shockbyte</a> starts at $2.50/mo; for a genuinely free server, <a href="/reviews/server-pro/">Server.pro</a>; for modpacks, ServerPrism or <a href="/reviews/bisecthosting/">BisectHosting</a>. Rankings weight disclosed CPU hardware, price per GB of RAM, datacenter coverage, and support — never affiliate payouts.</p>
+
 <div class="hero-stats">
   <div><span class="num">{{ site.reviews | size }}</span><span class="label">Providers reviewed</span></div>
   <div><span class="num">~21k</span><span class="label">Words of research</span></div>
-  <div><span class="num">May 2026</span><span class="label">Last updated</span></div>
+  <div><span class="num">{{ page.last_updated | date: "%b %Y" }}</span><span class="label">Last updated</span></div>
 </div>
 
 > **Methodology:** every provider listed here has a [full review](#full-reviews). Pricing reflects the cheapest publicly listed Minecraft plan in USD as of the review's `last_updated` date. CPU and RAM allocation type (dedicated vs shared) is taken from the provider's own published specifications — when undisclosed, we say so rather than guess.

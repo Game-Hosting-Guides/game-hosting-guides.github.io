@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  {% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" type="image/jpeg" href="{{ '/assets/img/logo.jpg' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/img/logo.jpg' | relative_url }}">
   <meta name="theme-color" content="#fbfaf6">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
   <script type="application/ld+json">
   {
@@ -40,14 +40,6 @@
       "@type": "Organization",
       "name": "Game Hosting Guides",
       "url": "{{ site.url }}"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "{{ site.url }}/?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
     }
   }
   </script>

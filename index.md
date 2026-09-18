@@ -81,9 +81,10 @@ permalink: /
         "name": {{ r.title | jsonify }},
         "url": "{{ r.url | absolute_url }}",
         "itemReviewed": {
-          "@type": "Organization",
-          "name": {{ r.provider_name | jsonify }},
-          "url": "{{ r.provider_url | escape }}"
+          "@type": "Product",
+          "name": {{ r.provider_name | append: " Minecraft Server Hosting" | jsonify }},
+          "url": "{{ r.provider_url | escape }}",
+          "brand": { "@type": "Organization", "name": {{ r.provider_name | jsonify }} }
         },
         "reviewRating": {
           "@type": "Rating",

@@ -15,6 +15,17 @@
 - [ServerPrism review](https://gamehostingguides.com/reviews/serverprism/): Single plan splittable across multiple game servers, proxies, databases, and bots.
 - [Shockbyte review](https://gamehostingguides.com/reviews/shockbyte/): Budget Minecraft hosting with global node coverage including Sydney and Singapore.
 
+## Guides
+
+- [How much RAM does a Minecraft server need?](https://gamehostingguides.com/guides/minecraft-server-ram/): Vanilla 1-5 players needs 2 GB; a plugin server wants 4 GB; a 100-mod pack wants 6-8 GB; 200+ mod packs want 10-12 GB. CPU clock matters more than RAM for TPS.
+- [Why is my Minecraft server lagging?](https://gamehostingguides.com/guides/why-is-my-minecraft-server-lagging/): TPS below 20 = server-side lag (CPU, view-distance, entities, a bad plugin, or GC), not network. Diagnose with /tps or Spark; more RAM rarely fixes low TPS.
+- [Minecraft server backups](https://gamehostingguides.com/guides/minecraft-server-backups/): Retention matters more than frequency; keep at least one off-site copy; back up the whole server directory (not just the world); and test a restore before you need it.
+- [Best cheap Minecraft hosting under $5/mo](https://gamehostingguides.com/guides/best-cheap-minecraft-server-hosting/): Curated sub-$5 picks with disclosed CPUs and real RAM; the honest entry point is ~$2.50-$4/mo for 1-2 GB.
+- [Best Minecraft hosting for modpacks](https://gamehostingguides.com/guides/best-minecraft-hosting-for-modpacks/): Modpacks need 6-12 GB, high single-thread CPU clock, and broad modloader support; undersizing on RAM or CPU causes OOM crashes and lag.
+- [Java vs Bedrock Minecraft servers](https://gamehostingguides.com/guides/java-vs-bedrock-minecraft-servers/): Java has mods/plugins and is single-thread CPU-bound; Bedrock is cross-platform and lighter. Your platform and modding needs decide, not raw performance.
+- [Does datacenter location matter?](https://gamehostingguides.com/guides/minecraft-server-datacenter-location/): Yes — aim for under ~80 ms ping from your typical player; a great CPU in the wrong region still feels laggy because latency is set by distance.
+- [Apex Hosting vs Shockbyte](https://gamehostingguides.com/guides/apex-hosting-vs-shockbyte/): Head-to-head on price, disclosed hardware, panel, and support to pick between two of the most popular budget Minecraft hosts.
+
 ## Videos
 
 - [@GameHostingGuides on YouTube](https://www.youtube.com/@GameHostingGuides): Real-world hosting tests, comparisons, and server tips.

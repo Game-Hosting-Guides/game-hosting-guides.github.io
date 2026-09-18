@@ -68,6 +68,13 @@ def clean_description(desc: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", out)
 
 
+def clean_title(title: str) -> str:
+    """Strip trailing #hashtag spam from a video title (keeps real words)."""
+    cleaned = re.sub(r"\s*#\w[\w-]*", "", title or "")
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned or (title or "").strip()
+
+
 def extract_summary(clean_desc: str, max_chars: int = 500) -> str:
     """First paragraph(s) up to ~max_chars."""
     if not clean_desc:
@@ -173,10 +180,14 @@ def upsert_video(entry: dict) -> bool:
         print(f"  Skipping {video_id} (manual-edit marker present)")
         return False
 
+    entry["title"] = clean_title(entry["title"])
     clean_desc = clean_description(entry["description"])
     summary = extract_summary(clean_desc)
     related = find_related_reviews(entry["title"], clean_desc)
     transcript = best_effort_transcript(video_id)
+    # Off-topic meme Shorts (a short with no hosting provider mentioned) dilute
+    # the site's topic authority — keep them out of the index and sitemap.
+    is_meme_short = entry["is_short"] and not related
 
     description_meta = (summary or entry["title"]).replace("\n", " ").strip()
     if len(description_meta) > 155:
@@ -189,6 +200,7 @@ def upsert_video(entry: dict) -> bool:
         "video_url": entry["link"],
         "video_type": "short" if entry["is_short"] else "video",
         "thumbnail": entry["thumbnail"],
+        "image": entry["thumbnail"],
         "published": entry["published"][:10],
         "last_updated": entry["updated"][:10],
         "channel_name": "Game Hosting Guides",
@@ -196,6 +208,9 @@ def upsert_video(entry: dict) -> bool:
     }
     if related:
         fm["mentioned_providers"] = [name for _, name in related]
+    if is_meme_short:
+        fm["noindex"] = True
+        fm["sitemap"] = False
 
     body = render_body(entry, summary, related, transcript)
     content = render_front_matter(fm) + "\n" + body + "\n"

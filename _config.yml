@@ -5,6 +5,7 @@ baseurl: ""
 author:
   name: "Wild Nature"
   url: "/about/"
+  twitter: gamehostingguides
 publisher: "Game Hosting Guides"
 contact_email: "ghguides@proton.me"
 lang: en_US
@@ -15,6 +16,10 @@ image: /assets/img/logo.jpg
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# Ship the Cloudflare Pages _redirects file (underscore files are excluded by default)
+include:
+  - _redirects
 
 plugins:
   - jekyll-seo-tag
@@ -29,21 +34,25 @@ defaults:
       type: pages
     values:
       layout: default
+      image: /assets/img/logo.jpg
   - scope:
       path: ""
       type: reviews
     values:
       layout: review
+      image: /assets/img/logo.jpg
   - scope:
       path: ""
       type: videos
     values:
       layout: video
+      image: /assets/img/logo.jpg
   - scope:
       path: ""
       type: guides
     values:
       layout: guide
+      image: /assets/img/logo.jpg
 
 collections:
   reviews:
