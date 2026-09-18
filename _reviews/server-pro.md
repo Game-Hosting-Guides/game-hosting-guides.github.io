@@ -6,7 +6,7 @@ provider_url: "https://server.pro"
 slug: server-pro
 rating: 6
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-23
 locations: ["North America", "Europe", "Asia-Pacific", "South America", "Oceania"]
 starting_price_usd: 0
 starting_ram_gb: 1

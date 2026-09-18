@@ -6,7 +6,7 @@ provider_url: "https://apexminecrafthosting.com"
 slug: apex-hosting
 rating: 8.2
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-09-11
 locations: [Dallas, New York, Los Angeles, Miami, Chicago, Seattle, Montreal, São Paulo, London, Paris, Warsaw, Frankfurt, Istanbul, Moscow, Tel Aviv, Hong Kong, Singapore, Sydney]
 starting_price_usd: 4.49
 starting_ram_gb: 1

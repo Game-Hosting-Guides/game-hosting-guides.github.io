@@ -6,7 +6,7 @@ provider_url: "https://nodecraft.com"
 slug: nodecraft
 rating: 8.5
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-30
 locations: ["Seattle", "San Jose", "Denver", "Dallas", "Houston", "Chicago", "Atlanta", "Miami", "Boston", "Toronto", "São Paulo", "London", "Paris", "Amsterdam", "Madrid", "Copenhagen", "Prague", "Zagreb", "Bucharest", "Tel Aviv", "Singapore", "Tokyo", "Melbourne", "Sydney", "Auckland"]
 starting_price_usd: 5.96
 starting_ram_gb: 2

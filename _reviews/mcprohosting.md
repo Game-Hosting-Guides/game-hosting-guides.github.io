@@ -6,7 +6,7 @@ provider_url: "https://mcprohosting.com"
 slug: mcprohosting
 rating: 6.5
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-16
 locations: [Dallas, New York, Los Angeles, Miami, Chicago, Seattle, Montreal, São Paulo, London, Paris, Warsaw, Frankfurt, Istanbul, Moscow, Tel Aviv, Hong Kong, Singapore, Sydney]
 starting_price_usd: 7.99
 starting_ram_gb: 1

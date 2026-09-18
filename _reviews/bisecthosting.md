@@ -6,7 +6,7 @@ provider_url: "https://bisecthosting.com"
 slug: bisecthosting
 rating: 8
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-09-03
 locations: [US East, US Central, US West, Canada, Brazil, United Kingdom, Germany, France, Finland, Poland, Singapore, Japan, Australia]
 starting_price_usd: 2.99
 starting_ram_gb: 2

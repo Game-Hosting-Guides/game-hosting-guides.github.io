@@ -6,7 +6,7 @@ provider_url: "https://serverprism.com"
 slug: serverprism
 rating: 9.0
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-09-14
 locations: ["Europe", "North America", "Asia", "Australia"]
 starting_price_usd: 3.80
 starting_ram_gb: 2

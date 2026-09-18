@@ -6,7 +6,7 @@ provider_url: "https://cloudnord.net"
 slug: cloudnord
 rating: 8.7
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-09-08
 locations: ["London, UK", "Amsterdam, NL", "Nuremberg, DE", "New York, US", "Los Angeles, US", "Toronto, CA", "São Paulo, BR", "Mumbai, IN", "Singapore", "Sydney, AU"]
 starting_price_usd: 3.99
 starting_ram_gb: 2

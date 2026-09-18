@@ -6,7 +6,7 @@ provider_url: "https://shockbyte.com"
 slug: shockbyte
 rating: 7
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-26
 locations: ["New Jersey, US", "West Chicago, US", "Dallas, US", "Los Angeles, US", "Amsterdam, NL", "Maidenhead, UK", "Singapore", "Sydney, AU"]
 starting_price_usd: 2.50
 starting_ram_gb: 1

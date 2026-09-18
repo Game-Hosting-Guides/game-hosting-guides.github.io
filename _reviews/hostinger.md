@@ -6,7 +6,7 @@ provider_url: "https://www.hostinger.com/game-server-hosting"
 slug: hostinger
 rating: 7
 date: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-20
 locations: ["Phoenix, USA", "Boston, USA", "United Kingdom", "France", "Germany", "Lithuania", "India", "Indonesia", "Malaysia"]
 starting_price_usd: 11.99
 starting_ram_gb: 4
