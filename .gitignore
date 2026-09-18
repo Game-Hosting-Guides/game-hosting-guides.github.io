@@ -8,3 +8,6 @@ Gemfile.lock
 .DS_Store
 node_modules/
 _site_gh/
+.wrangler/
+__pycache__/
+*.pyc
