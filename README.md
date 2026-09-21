@@ -19,8 +19,8 @@ The full comparison page with disclosed CPU specs, locations, and pricing is at:
 |---|---|---|---|---|---|
 | **ServerPrism** | **9.0 / 10** | $3.80 | 2 GB | Disclosed Ryzen 9 + DDR5 ECC RAM + split-plan billing | [Read](https://gamehostingguides.com/reviews/serverprism/) |
 | **CloudNord** | **8.7 / 10** | $3.99 | 2 GB | Published Ryzen 7 7700 boosting to 4.9 GHz at entry tier | [Read](https://gamehostingguides.com/reviews/cloudnord/) |
-| Godlike | 8.6 / 10 | $6.90 | 2 GB | Names the Ryzen 9 9950X3D SKU — 3D V-Cache silicon | [Read](https://gamehostingguides.com/reviews/godlike/) |
 | Nodecraft | 8.5 / 10 | $5.96 | 2 GB | Switch between 59+ games on the same server | [Read](https://gamehostingguides.com/reviews/nodecraft/) |
+| Godlike | 8.4 / 10 | $6.90 | 2 GB | Names the Ryzen 9 9950X3D SKU — 3D V-Cache silicon | [Read](https://gamehostingguides.com/reviews/godlike/) |
 | Apex Hosting | 8.2 / 10 | $4.49 | 1 GB | 18 datacenters and one-click modpacks | [Read](https://gamehostingguides.com/reviews/apex-hosting/) |
 | BisectHosting | 8 / 10 | $2.99 | 2 GB | 2,300+ modpack library across 21 locations | [Read](https://gamehostingguides.com/reviews/bisecthosting/) |
 | Shockbyte | 7 / 10 | $2.50 | 1 GB | Cheap entry tier with global node coverage | [Read](https://gamehostingguides.com/reviews/shockbyte/) |

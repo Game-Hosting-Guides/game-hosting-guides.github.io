@@ -1,10 +1,10 @@
 ---
 title: "Godlike Review (2026): Named Ryzen 9 9950X3D Minecraft Hosting"
-description: "Independent 2026 Godlike.host review: disclosed Ryzen 9 9950X3D nodes, Java plans from ~$6.90/mo for 2 GB, 12 regions, and a Pterodactyl-based panel. Rated 8.6/10."
+description: "Independent 2026 Godlike.host review: disclosed Ryzen 9 9950X3D nodes, Java plans from ~$6.90/mo for 2 GB, 12 regions, and a Pterodactyl-based panel. Rated 8.4/10."
 provider_name: "Godlike"
 provider_url: "https://godlike.host"
 slug: godlike
-rating: 8.6
+rating: 8.4
 date: 2026-09-21
 last_updated: 2026-09-21
 redirect_from:
@@ -33,13 +33,13 @@ faq:
     answer: "A custom Godlike Panel built on Pterodactyl. You get a live console, SFTP, file manager, scheduled tasks, a plugin/modpack installer, and the option to split one plan into multiple server instances."
 ---
 
-Godlike (godlike.host) is our **#3 rated Minecraft host in 2026** because it does the thing most of this market still refuses to do: it **names the chip**. The Minecraft product is sold on **AMD Ryzen 9 9950X3D** nodes — a 16-core Zen 5 part with 3D V-Cache and a 5.7 GHz boost — which is as close as consumer silicon currently gets to "the right CPU for a Minecraft tick loop." Operated by **Godlike Digital Solutions S.R.L.** out of Brașov, Romania (reg. no. 49011827), the company has been around since 2021 and sells Java, Bedrock, and a long list of other game servers from a Pterodactyl-based panel with a 12-region footprint.
+Godlike (godlike.host) is our **#4 rated Minecraft host in 2026** because it does the thing most of this market still refuses to do: it **names the chip**. The Minecraft product is sold on **AMD Ryzen 9 9950X3D** nodes — a 16-core Zen 5 part with 3D V-Cache and a 5.7 GHz boost — which is as close as consumer silicon currently gets to "the right CPU for a Minecraft tick loop." Operated by **Godlike Digital Solutions S.R.L.** out of Brașov, Romania (reg. no. 49011827), the company has been around since 2021 and sells Java, Bedrock, and a long list of other game servers from a Pterodactyl-based panel with a 12-region footprint.
 
 That hardware disclosure is the rating. The rest of the product is a competent mid-market Minecraft host: RAM-tiered Java plans starting at **€6.29/mo (~$6.90) for 2 GB**, one-click CurseForge/Modrinth/FTB installs, a server-splitter, Path.net DDoS mitigation, and 24/7 chat. It is not the cheapest recurring plan in this comparison, the 3-day refund window is short, and the same FAQ that names the 9950X3D also names an **EPYC 9474F** fallback — so you should confirm the chip for the region you actually pick. None of that knocks it off the podium, because the named 9950X3D is a stronger single-thread story than anything [Nodecraft](/reviews/nodecraft/) or [Apex Hosting](/reviews/apex-hosting/) publish on their standard tiers.
 
 This review reflects pricing, plan names, and policy language fetched from Godlike's public pages on 21 September 2026. EUR is the catalogue currency; USD figures use the same ~1.10 FX rate as our other EUR-priced reviews. Frequent flash sales mean the number on the homepage banner is often a promo, not the renewal rate — we score on the published list price.
 
-## Why we rate it 8.6
+## Why we rate it 8.4
 
 Four things put Godlike ahead of Nodecraft and the rest of the mid-pack:
 
@@ -48,7 +48,7 @@ Four things put Godlike ahead of Nodecraft and the rest of the mid-pack:
 3. **The panel is a real Pterodactyl fork with extras that matter.** Server splitting, a Discord management bot, three free backups per day, one-click modpack *and* plugin installers, and SFTP are the feature set a 15–40 player community actually uses. NodePanel at Nodecraft is prettier; Godlike's panel is closer to what a technical admin already knows.
 4. **Coverage is wide enough for mixed friend groups.** Twelve regions spanning US East/West, Canada, four European countries plus Ukraine, and Singapore / India / Australia is a bigger map than CloudNord's EU-first footprint and comparable to the larger mid-market hosts.
 
-It is **8.6 rather than 9.0** because the recurring 2 GB price is roughly double ServerPrism's, the DDR5 is **non-ECC**, the FAQ still lists an EPYC 9474F alongside the 9950X3D, the refund window is 3 days on a first purchase only, and the storefront leans hard on rotating 75%-off banners. Those are real caveats. They are also the reason this sits behind CloudNord instead of tying it.
+It is **8.4 rather than 9.0** because the recurring 2 GB price is roughly double ServerPrism's, the DDR5 is **non-ECC**, the FAQ still lists an EPYC 9474F alongside the 9950X3D, the refund window is 3 days on a first purchase only, and the storefront leans hard on rotating 75%-off banners. Those are real caveats. They are also the reason this sits behind CloudNord and Nodecraft instead of tying them.
 
 ## Pricing and plans
 
@@ -89,7 +89,7 @@ The published node around that CPU is also unusually specific: **192 GB DDR5-480
 Two hardware caveats, both material:
 
 - **The RAM is non-ECC.** ServerPrism's 9.0 is built in part on DDR5 ECC at 5600 MHz. Godlike's 192 GB of consumer UDIMM is plenty of capacity and fine for the vast majority of Minecraft worlds; it does not correct single-bit errors the way ECC does on a week-long ATM10 instance. If silent memory corruption is a named fear, ServerPrism still wins that axis.
-- **EPYC 9474F is also in the FAQ.** A 48-core Genoa-X frequency-optimised EPYC is a strong server chip and a weaker Minecraft chip than a 9950X3D: fewer GHz on the thread that runs the tick. Godlike's own copy says clocks "range from 3.6 GHz up to 5.7 GHz" depending on CPU. That spread is the difference between "this is our #3" and "this would be a 9." Confirm the SKU for your region in chat before you pay, especially for US West, India, or Australia, where smaller hosts often rack the denser EPYC first.
+- **EPYC 9474F is also in the FAQ.** A 48-core Genoa-X frequency-optimised EPYC is a strong server chip and a weaker Minecraft chip than a 9950X3D: fewer GHz on the thread that runs the tick. Godlike's own copy says clocks "range from 3.6 GHz up to 5.7 GHz" depending on CPU. That spread is the difference between "this is our #4" and "this would be a 9." Confirm the SKU for your region in chat before you pay, especially for US West, India, or Australia, where smaller hosts often rack the denser EPYC first.
 
 We are scoring the *disclosed* 9950X3D product Godlike sells as Minecraft hosting, with the EPYC variance counted in the gap down from 9.0. Independent node-by-node TPS numbers are not on the public pages; the rating is a hardware-and-policy rating, same as the rest of this set.
 
@@ -169,7 +169,7 @@ It is a worse fit if you want the lowest recurring dollar per GB (Shockbyte, Bis
 
 ## Verdict
 
-Godlike earns **8.6/10** and the third slot in our 2026 ranking. The case is concentrated: it publishes a **Ryzen 9 9950X3D** as the Minecraft CPU, wraps it in a Gen5 NVMe node spec you can actually read, and ships a Pterodactyl panel with splitting, backups, and 24/7 chat across 12 regions. That is a stronger hardware disclosure than Nodecraft, Apex, or BisectHosting, and a newer/faster named SKU than CloudNord's 7700. It sits behind ServerPrism and CloudNord because the *recurring* 2 GB price is higher, the RAM is non-ECC, the EPYC 9474F still appears in the FAQ, and the refund window is a short first-purchase courtesy. If you care what silicon is running the tick and you can live with a mid-market invoice, Godlike is the host to try after those two.
+Godlike earns **8.4/10** and the fourth slot in our 2026 ranking. The case is concentrated: it publishes a **Ryzen 9 9950X3D** as the Minecraft CPU, wraps it in a Gen5 NVMe node spec you can actually read, and ships a Pterodactyl panel with splitting, backups, and 24/7 chat across 12 regions. That is a stronger hardware disclosure than Apex, BisectHosting, or Shockbyte, and a newer/faster named SKU than CloudNord's 7700. It sits behind ServerPrism, CloudNord, and Nodecraft because the *recurring* 2 GB price is higher, the RAM is non-ECC, the EPYC 9474F still appears in the FAQ, and the refund window is a short first-purchase courtesy. If you care what silicon is running the tick and you can live with a mid-market invoice, Godlike is the host to try after those three.
 
 ## Frequently asked questions
 
