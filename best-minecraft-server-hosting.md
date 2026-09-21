@@ -4,7 +4,7 @@ title: "Best Minecraft Server Hosting (2026): Compared and Reviewed"
 description: "Side-by-side comparison of the best Minecraft server hosting providers in 2026 — disclosed CPU specs, pricing per GB of RAM, datacenter locations, and links to full reviews of each host."
 permalink: /best-minecraft-server-hosting/
 image: /assets/img/og-comparison.png
-last_updated: 2026-09-18
+last_updated: 2026-09-21
 faq:
   - question: "How much RAM do I actually need for a Minecraft server?"
     answer: "Vanilla, 1-5 players: 2 GB is fine. 6-15 players or light plugins: 4 GB. Modded (50-100 mods) or 15-30 players: 6-8 GB. Large modpacks or 50+ players: 10 GB+ and dedicated CPU cores matter more than RAM at that point."
