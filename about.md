@@ -27,6 +27,10 @@ Each provider is evaluated on the same criteria:
 
 Some outbound links to hosting providers may be affiliate links. We earn a commission if you sign up via those links at no additional cost to you. Affiliate status **never** affects which providers we cover or the scores we give them. Several providers in our comparisons have no affiliate relationship with us and are included purely on merit.
 
+## Sponsored placements
+
+Separately from our independent reviews, we sometimes accept **paid sponsored placements**. These are always clearly labeled "Sponsored" wherever they appear. A sponsored placement is **not scored**, is **not ranked** in our comparison table, and is **not independently tested** — any specifications shown are provided by the vendor and not verified by us. Sponsorship never buys a place in, or a position within, our merit-based rankings, and never affects the reviews. Outbound links on sponsored placements are marked `rel="sponsored"`.
+
 ## Contact
 
 Spotted an outdated price, a broken link, or a host we should review? [Get in touch via our contact page](/contact/).

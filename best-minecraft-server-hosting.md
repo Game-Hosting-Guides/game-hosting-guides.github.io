@@ -81,6 +81,24 @@ faq:
 </li>
 {% endfor %}</ul>
 
+## Sponsored partner
+
+<p><em>Paid placement — <strong>not part of the ranked comparison above.</strong> This host has not been independently tested or scored by us; specifications are vendor-provided. <a href="/about/#sponsored-placements">How sponsorship works</a>.</em></p>
+
+<ul class="featured-grid">
+<li>
+  <a class="featured-card" href="/partners/godlike-host/">
+    <span class="card-rating" style="background:var(--accent-soft); color:var(--accent-strong);">Sponsored</span>
+    <h3>GODLIKE (godlike.host)</h3>
+    <p>Sponsored partner — AMD Ryzen 9 9950X3D nodes, 192 GB DDR5, Gen5 NVMe, and 9 global locations. Specs provided by the vendor, not independently tested.</p>
+    <div class="card-meta">
+      <span><strong>CPU</strong> Ryzen 9 9950X3D</span>
+      <span><strong>Locations</strong> 9 regions</span>
+    </div>
+  </a>
+</li>
+</ul>
+
 ## FAQ
 
 ### How much RAM do I actually need for a Minecraft server?
