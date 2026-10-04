@@ -6,6 +6,7 @@
   {% seo %}
   {% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if site.seasonal_theme == 'halloween' %}<link rel="stylesheet" href="{{ '/assets/css/halloween.css' | relative_url }}">{% endif %}
   <link rel="icon" type="image/jpeg" href="{{ '/assets/img/logo.jpg' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/img/logo.jpg' | relative_url }}">
   <meta name="theme-color" content="#fbfaf6">
@@ -57,6 +58,7 @@
   {% endunless %}
 </head>
 <body>
+  {% if site.seasonal_theme == 'halloween' %}<div class="seasonal-strip">🎃 <strong>Happy Halloween</strong> from Game Hosting Guides — fresh reviews and guides all October.</div>{% endif %}
   <header class="site-header">
     <div class="wrap">
       <a class="site-title" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">

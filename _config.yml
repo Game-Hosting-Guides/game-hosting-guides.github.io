@@ -9,6 +9,9 @@ author:
 publisher: "Game Hosting Guides"
 contact_email: "ghguides@proton.me"
 lang: en_US
+
+# Seasonal theme (Oct): loads assets/css/halloween.css + a greeting strip. Delete to revert.
+seasonal_theme: halloween
 timezone: UTC
 logo: /assets/img/logo.jpg
 image: /assets/img/logo.jpg

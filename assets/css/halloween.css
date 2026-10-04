@@ -1,0 +1,28 @@
+/*
+ * Seasonal theme: Halloween. Loaded only when `seasonal_theme: halloween` is
+ * set in _config.yml — remove that line to switch back to the regular palette.
+ * Deliberately restrained: swaps the amber accent for pumpkin orange and the
+ * dark surfaces for a deep aubergine, plus one slim greeting strip. No layout
+ * changes, no novelty fonts.
+ */
+:root {
+  --accent: #c2410c;          /* pumpkin orange; ~5.2:1 on cream, passes AA */
+  --accent-strong: #9a3412;
+  --accent-soft: #fdeee3;
+  --accent-pop: #fb923c;      /* brighter orange, used only on dark surfaces */
+
+  --bg-dark: #1c1424;         /* deep aubergine instead of near-black */
+  --bg-dark-2: #261b30;
+}
+
+.seasonal-strip {
+  background: var(--bg-dark);
+  color: #e9dff0;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 7px 16px;
+  border-bottom: 1px solid #3a2a45;
+}
+.seasonal-strip strong { color: var(--accent-pop); font-weight: 600; }
