@@ -7,7 +7,7 @@ video_type: "short"
 thumbnail: "https://i1.ytimg.com/vi/HwG6pKqiagE/hqdefault.jpg"
 image: "https://i1.ytimg.com/vi/HwG6pKqiagE/hqdefault.jpg"
 published: "2026-09-22"
-last_updated: "2026-09-25"
+last_updated: "2026-10-03"
 channel_name: "Game Hosting Guides"
 channel_url: "https://www.youtube.com/@GameHostingGuides"
 mentioned_providers: ["ServerPrism", "Server.pro"]
