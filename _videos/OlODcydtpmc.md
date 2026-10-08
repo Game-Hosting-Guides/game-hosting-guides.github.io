@@ -7,7 +7,7 @@ video_type: "short"
 thumbnail: "https://i4.ytimg.com/vi/OlODcydtpmc/hqdefault.jpg"
 image: "https://i4.ytimg.com/vi/OlODcydtpmc/hqdefault.jpg"
 published: "2026-10-03"
-last_updated: "2026-10-03"
+last_updated: "2026-10-07"
 channel_name: "Game Hosting Guides"
 channel_url: "https://www.youtube.com/@GameHostingGuides"
 noindex: true
